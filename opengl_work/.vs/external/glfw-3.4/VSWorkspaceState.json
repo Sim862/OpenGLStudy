@@ -1,0 +1,8 @@
+{
+  "OutputFoldersPerTargetSystem": {
+    "Local Machine": [
+      "external\\glfw-3.4\\out\\build\\x64-Debug",
+      "external\\glfw-3.4\\out\\install\\x64-Debug"
+    ]
+  }
+}

@@ -1,0 +1,164 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				},
+				{
+					"build" : "glfw_build",
+					"childIndexes" : 
+					[
+						2,
+						3
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-glfw_build-Debug-9af09ea26849f1c9a84c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.4"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "E:/git/OpenGLStudy/opengl_work/external/glfw-3.4",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "glfw_build/src",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-glfw_build.src-Debug-7119e7810709ab689a44.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.4"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "E:/git/OpenGLStudy/opengl_work/external/glfw-3.4/src",
+					"targetIndexes" : 
+					[
+						2,
+						4
+					]
+				},
+				{
+					"build" : "glfw_build/docs",
+					"jsonFile" : "directory-glfw_build.docs-Debug-7ad446750cf1822801f8.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.4"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "E:/git/OpenGLStudy/opengl_work/external/glfw-3.4/docs"
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "HelloTriangle",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1,
+						2,
+						3
+					],
+					"name" : "GLFW",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "HelloTriangle::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-HelloTriangle-Debug-31289a90b9160ec938d2.json",
+					"name" : "HelloTriangle",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "glad::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-glad-Debug-2ed0fb8690aea8df9bfd.json",
+					"name" : "glad",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "glfw::@9d7e251a3367c234290d",
+					"jsonFile" : "target-glfw-Debug-eb94fb74d36260e9de52.json",
+					"name" : "glfw",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "uninstall::@97b88ff70bc8a62a1e37",
+					"jsonFile" : "target-uninstall-Debug-dce4339de9a4516caecc.json",
+					"name" : "uninstall",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "update_mappings::@9d7e251a3367c234290d",
+					"jsonFile" : "target-update_mappings-Debug-e16adbfeb6f73d9e1b6b.json",
+					"name" : "update_mappings",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "E:/git/OpenGLStudy/opengl_work/HelloTriangle/out/build/x64-Debug",
+		"source" : "E:/git/OpenGLStudy/opengl_work/HelloTriangle"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

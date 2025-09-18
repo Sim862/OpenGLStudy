@@ -1,0 +1,4 @@
+{
+  "enableCMake": true,
+  "sourceDirectory": "external\\glfw-3.4"
+}
