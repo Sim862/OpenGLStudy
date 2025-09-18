@@ -265,6 +265,15 @@ CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 DOXYGEN_EXECUTABLE:FILEPATH=DOXYGEN_EXECUTABLE-NOTFOUND
 
 //Value Computed by CMake
+FirstOpenGL_BINARY_DIR:STATIC=E:/git/OpenGLStudy/opengl_work/HelloTriangle/out/build/x64-Debug
+
+//Value Computed by CMake
+FirstOpenGL_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+FirstOpenGL_SOURCE_DIR:STATIC=E:/git/OpenGLStudy/opengl_work/HelloTriangle
+
+//Value Computed by CMake
 GLFW_BINARY_DIR:STATIC=E:/git/OpenGLStudy/opengl_work/HelloTriangle/out/build/x64-Debug/glfw_build
 
 //Build the GLFW documentation

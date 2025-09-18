@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\external"
+    "\\external",
+    "\\HelloTriangle",
+    "\\HelloTriangle\\src"
   ],
-  "SelectedNode": "\\external\\glfw-3.4",
+  "SelectedNode": "\\HelloTriangle\\src\\main.cpp",
   "PreviewInSolutionExplorer": false
 }

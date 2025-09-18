@@ -7,6 +7,13 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\git\\OpenGLStudy\\opengl_work\\HelloTriangle\\CMakeLists.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CMakeLists.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\git\\OpenGLStudy\\opengl_work\\external\\glfw-3.4\\include\\GLFW\\glfw3.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|CMake \uAC1C\uC694 \uD398\uC774\uC9C0||{B1CAA5B0-FEB1-4350-8AB9-F895876842F2}"
     }
   ],
@@ -17,8 +24,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "glfw3.h",
+              "DocumentMoniker": "E:\\git\\OpenGLStudy\\opengl_work\\external\\glfw-3.4\\include\\GLFW\\glfw3.h",
+              "RelativeDocumentMoniker": "..\\external\\glfw-3.4\\include\\GLFW\\glfw3.h",
+              "ToolTip": "E:\\git\\OpenGLStudy\\opengl_work\\external\\glfw-3.4\\include\\GLFW\\glfw3.h",
+              "RelativeToolTip": "..\\external\\glfw-3.4\\include\\GLFW\\glfw3.h",
+              "ViewState": "AgIAAIwMAAAAAAAAAAAiwKIMAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-09-18T15:19:07.816Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CMakeLists.txt",
+              "DocumentMoniker": "E:\\git\\OpenGLStudy\\opengl_work\\HelloTriangle\\CMakeLists.txt",
+              "RelativeDocumentMoniker": "CMakeLists.txt",
+              "ToolTip": "E:\\git\\OpenGLStudy\\opengl_work\\HelloTriangle\\CMakeLists.txt",
+              "RelativeToolTip": "CMakeLists.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-09-18T15:13:41.796Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -27,19 +60,20 @@
               "RelativeDocumentMoniker": "src\\main.cpp",
               "ToolTip": "E:\\git\\OpenGLStudy\\opengl_work\\HelloTriangle\\src\\main.cpp",
               "RelativeToolTip": "src\\main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABKAAAAAAAAAA==",
+              "ViewState": "AgIAAMIAAAAAAAAAAAAAANEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-09-18T12:56:38.48Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "CMake \uAC1C\uC694 \uD398\uC774\uC9C0",
               "DocumentMoniker": "CMake \uAC1C\uC694 \uD398\uC774\uC9C0",
               "ToolTip": "CMake \uAC1C\uC694 \uD398\uC774\uC9C0",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-09-18T12:55:19.275Z"
+              "WhenOpened": "2025-09-18T12:55:19.275Z",
+              "EditorCaption": ""
             }
           ]
         }
