@@ -1,8 +1,8 @@
-# Install script for directory: E:/git/OpenGLStudy/opengl_work/external/glfw-3.4/docs
+# Install script for directory: C:/Users/공-314-34/Downloads/OpenGLStudy-Vertex-Color/OpenGLStudy-Vertex-Color/opengl_work/external/glfw-3.4/docs
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "E:/git/OpenGLStudy/opengl_work/HelloTriangle/out/install/x64-Debug")
+  set(CMAKE_INSTALL_PREFIX "C:/Users/공-314-34/Downloads/OpenGLStudy-Vertex-Color/OpenGLStudy-Vertex-Color/opengl_work/HelloTriangle/out/install/x64-Debug")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -32,3 +32,9 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
+string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
+       "${CMAKE_INSTALL_MANIFEST_FILES}")
+if(CMAKE_INSTALL_LOCAL_ONLY)
+  file(WRITE "C:/Users/공-314-34/Downloads/OpenGLStudy-Vertex-Color/OpenGLStudy-Vertex-Color/opengl_work/HelloTriangle/out/build/x64-Debug/glfw_build/docs/install_local_manifest.txt"
+     "${CMAKE_INSTALL_MANIFEST_CONTENT}")
+endif()

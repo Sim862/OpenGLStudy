@@ -6,7 +6,10 @@
     ]
   },
   "ExpandedNodes": [
-    ""
+    "",
+    "\\shaders",
+    "\\src"
   ],
+  "SelectedNode": "\\shaders\\uniform.frag",
   "PreviewInSolutionExplorer": false
 }

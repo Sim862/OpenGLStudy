@@ -1,0 +1,164 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				},
+				{
+					"build" : "glfw_build",
+					"childIndexes" : 
+					[
+						2,
+						3
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-glfw_build-Debug-dfb5b4fc565eab95c553.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.4"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "C:/Users/\uacf5-314-34/Downloads/OpenGLStudy-Vertex-Color/OpenGLStudy-Vertex-Color/opengl_work/external/glfw-3.4",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "glfw_build/src",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-glfw_build.src-Debug-c5354111442e2281e028.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.4"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "C:/Users/\uacf5-314-34/Downloads/OpenGLStudy-Vertex-Color/OpenGLStudy-Vertex-Color/opengl_work/external/glfw-3.4/src",
+					"targetIndexes" : 
+					[
+						2,
+						4
+					]
+				},
+				{
+					"build" : "glfw_build/docs",
+					"jsonFile" : "directory-glfw_build.docs-Debug-b542cc38889a479eda8c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.4"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "C:/Users/\uacf5-314-34/Downloads/OpenGLStudy-Vertex-Color/OpenGLStudy-Vertex-Color/opengl_work/external/glfw-3.4/docs"
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "HelloTriangle",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1,
+						2,
+						3
+					],
+					"name" : "GLFW",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "HelloTriangle::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-HelloTriangle-Debug-134eba759fd74be69030.json",
+					"name" : "HelloTriangle",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "glad::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-glad-Debug-a609a242b80f37070965.json",
+					"name" : "glad",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "glfw::@9d7e251a3367c234290d",
+					"jsonFile" : "target-glfw-Debug-29d93683736d4a24180c.json",
+					"name" : "glfw",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "uninstall::@97b88ff70bc8a62a1e37",
+					"jsonFile" : "target-uninstall-Debug-d1ea2cf48e71f7e7008e.json",
+					"name" : "uninstall",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "update_mappings::@9d7e251a3367c234290d",
+					"jsonFile" : "target-update_mappings-Debug-16ac028bfde4974305b9.json",
+					"name" : "update_mappings",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/\uacf5-314-34/Downloads/OpenGLStudy-Vertex-Color/OpenGLStudy-Vertex-Color/opengl_work/HelloTriangle/out/build/x64-Debug",
+		"source" : "C:/Users/\uacf5-314-34/Downloads/OpenGLStudy-Vertex-Color/OpenGLStudy-Vertex-Color/opengl_work/HelloTriangle"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 8
+	}
+}

@@ -144,51 +144,81 @@ int main() {
 
     // 8. 리사이즈 콜백 등록(창 크기 바뀌면 자동으로 glViewport 맞춰줌)
     glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
-    // NDC 좌표 (반시계 방향)
-    float vertices1[] = {
-        -0.9f, -0.5f, 0.0f,
-        0.0f, -0.5f, 0.0f,
-        -0.45f, 0.5f, 0.0f,
-    };
-    float vertices2[] = {
-        0.0f, -0.5f, 0.0f,
-        0.9f, -0.5f, 0.0f,
-        0.45f, 0.5f, 0.0f
-    };
-    unsigned int VBO[2], VAO[2];
 
-    // VAO, VBO 생성 단계
-    glGenVertexArrays(2, VAO);
-    glGenBuffers(2, VBO);
+#pragma region 삼각형 2개 만들기
+    //// NDC 좌표 (반시계 방향)
+   //float vertices1[] = {
+   //    -0.9f, -0.5f, 0.0f,
+   //    0.0f, -0.5f, 0.0f,
+   //    -0.45f, 0.5f, 0.0f,
+   //};
+   //float vertices2[] = {
+   //    0.0f, -0.5f, 0.0f,
+   //    0.9f, -0.5f, 0.0f,
+   //    0.45f, 0.5f, 0.0f
+   //};
+   //unsigned int VBO[2], VAO[2];
 
-    // 설정 단계 bind
-    glBindVertexArray(VAO[0]);
-    glBindBuffer(GL_ARRAY_BUFFER, VBO[0]);
-    glBufferData(GL_ARRAY_BUFFER, sizeof(vertices1), vertices1, GL_STATIC_DRAW);
-    glVertexAttribPointer(
-        0, // attribute index (location=0)
-        3, // vec3 → 3개 구성요소
-        GL_FLOAT, // 각 구성요소 타입
-        GL_FALSE, // 정규화 불필요
-        3 * sizeof(float), // stride: 한 정점에서 다음 정점까지 바이트 간격
-        (void*)0 // 시작 오프셋
-    );
-    // 해당 속성 활성화
+   //// VAO, VBO 생성 단계
+   //glGenVertexArrays(2, VAO);
+   //glGenBuffers(2, VBO);
+
+   //// 설정 단계 bind
+   //glBindVertexArray(VAO[0]);
+   //glBindBuffer(GL_ARRAY_BUFFER, VBO[0]);
+   //glBufferData(GL_ARRAY_BUFFER, sizeof(vertices1), vertices1, GL_STATIC_DRAW);
+   //glVertexAttribPointer(
+   //    0, // attribute index (location=0)
+   //    3, // vec3 → 3개 구성요소
+   //    GL_FLOAT, // 각 구성요소 타입
+   //    GL_FALSE, // 정규화 불필요
+   //    3 * sizeof(float), // stride: 한 정점에서 다음 정점까지 바이트 간격
+   //    (void*)0 // 시작 오프셋
+   //);
+   //// 해당 속성 활성화
+   //glEnableVertexAttribArray(0);
+
+   //glBindVertexArray(VAO[1]);
+   //glBindBuffer(GL_ARRAY_BUFFER, VBO[1]);
+   //glBufferData(GL_ARRAY_BUFFER, sizeof(vertices2), vertices2, GL_STATIC_DRAW);
+   //glVertexAttribPointer(
+   //    0, // attribute index (location=0)
+   //    3, // vec3 → 3개 구성요소
+   //    GL_FLOAT, // 각 구성요소 타입
+   //    GL_FALSE, // 정규화 불필요
+   //    3 * sizeof(float), // stride: 한 정점에서 다음 정점까지 바이트 간격
+   //    (void*)0 // 시작 오프셋
+   //);
+   //// 해당 속성 활성화
+   //glEnableVertexAttribArray(0);
+#pragma endregion
+
+   
+#pragma region 정점에 색상 추가
+    float colored[] = {
+        //  위치              // 색상
+        -0.5f, -0.5f, 0.0f,   1.0f, 0.0f, 0.0f,
+         0.5f, -0.5f, 0.0f,   0.0f, 1.0f, 0.0f,
+         0.0f,  0.5f, 0.0f,   0.0f, 0.0f, 1.0f
+    };
+
+    unsigned VAO, VBO;
+    
+    glGenVertexArrays(1, &VAO);
+    glGenBuffers(1, &VBO);
+
+    glBindVertexArray(VAO);
+    glBindBuffer(GL_ARRAY_BUFFER, VBO);
+    glBufferData(GL_ARRAY_BUFFER, sizeof(colored), colored, GL_STATIC_DRAW);
+
+
+    // stride = 6 * sizeof(float)
+    // 위치 속성: offset 0
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)0);
     glEnableVertexAttribArray(0);
 
-    glBindVertexArray(VAO[1]);
-    glBindBuffer(GL_ARRAY_BUFFER, VBO[1]);
-    glBufferData(GL_ARRAY_BUFFER, sizeof(vertices2), vertices2, GL_STATIC_DRAW);
-    glVertexAttribPointer(
-        0, // attribute index (location=0)
-        3, // vec3 → 3개 구성요소
-        GL_FLOAT, // 각 구성요소 타입
-        GL_FALSE, // 정규화 불필요
-        3 * sizeof(float), // stride: 한 정점에서 다음 정점까지 바이트 간격
-        (void*)0 // 시작 오프셋
-    );
-    // 해당 속성 활성화
-    glEnableVertexAttribArray(0);
+#pragma endregion
+
 
 
     // 3) 정점 속성 포인터 설정 (위치 속성만 있는 경우)
@@ -203,30 +233,25 @@ int main() {
 
 // (가정) GLFW로 창/컨텍스트 생성 완료, GLAD 초기화 완료
 
-    GLuint program = CreateShaderProgramFromFiles("shaders/simple.vert", "shaders/simple.frag");
+    GLuint program = CreateShaderProgramFromFiles("shaders/uniform.vert", "shaders/uniform.frag");
+
+    // 프로그램 링크 후, 한 번만 uniform 위치를 찾아둡니다.
+    GLint colorLoc = glGetUniformLocation(program, "uColor");
 
     // 렌더 루프 직전에 와이어프레임 모드 켜기
-    glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+    //glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
 
     while (!glfwWindowShouldClose(window))
     {
-        // 1) 화면 초기화(배경색)
-        glClearColor(0.1f, 0.1f, 0.15f, 1.0f);
-        glClear(GL_COLOR_BUFFER_BIT);
-
-        // 2) 그리기
-        glUseProgram(program);
-        glBindVertexArray(VAO[0]);
-        glDrawArrays(GL_TRIANGLES, 0, 3); // 정점 3개로 삼각형 1개
-
-        glUseProgram(program);
-        glBindVertexArray(VAO[1]);
-        glDrawArrays(GL_TRIANGLES, 0, 3); // 정점 3개로 삼각형 1개
-
-
-        // 3) 프레임 마무리
+        float t = (float)glfwGetTime();               // 경과 시간(초)
+        float g = 0.5f * std::sin(t) + 0.5f;          // 0~1 사이로 변환
+        glUseProgram(program);                           // (중요) 활성화 먼저
+        glUniform4f(colorLoc, 0.0f, g, 1.0f - g, 1.0f); // 파랑<->초록 계열 변화
+        glBindVertexArray(VAO);
+        glDrawArrays(GL_TRIANGLES, 0, 3);
         glfwSwapBuffers(window);
         glfwPollEvents();
+
     }
     // 10. 종료 처리
     glfwTerminate();
