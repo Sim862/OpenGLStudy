@@ -1,9 +1,9 @@
 
-if (NOT EXISTS "C:/Users/공-314-34/Downloads/OpenGLStudy-Vertex-Color/OpenGLStudy-Vertex-Color/opengl_work/HelloTriangle/out/build/x64-Debug/glfw_build/install_manifest.txt")
-    message(FATAL_ERROR "Cannot find install manifest: \"C:/Users/공-314-34/Downloads/OpenGLStudy-Vertex-Color/OpenGLStudy-Vertex-Color/opengl_work/HelloTriangle/out/build/x64-Debug/glfw_build/install_manifest.txt\"")
+if (NOT EXISTS "E:/git/OpenGLStudy/opengl_work/HelloTriangle/out/build/x64-Debug/glfw_build/install_manifest.txt")
+    message(FATAL_ERROR "Cannot find install manifest: \"E:/git/OpenGLStudy/opengl_work/HelloTriangle/out/build/x64-Debug/glfw_build/install_manifest.txt\"")
 endif()
 
-file(READ "C:/Users/공-314-34/Downloads/OpenGLStudy-Vertex-Color/OpenGLStudy-Vertex-Color/opengl_work/HelloTriangle/out/build/x64-Debug/glfw_build/install_manifest.txt" files)
+file(READ "E:/git/OpenGLStudy/opengl_work/HelloTriangle/out/build/x64-Debug/glfw_build/install_manifest.txt" files)
 string(REGEX REPLACE "\n" ";" files "${files}")
 
 foreach (file ${files})

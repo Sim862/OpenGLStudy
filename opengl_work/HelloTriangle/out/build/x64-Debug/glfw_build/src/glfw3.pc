@@ -1,7 +1,7 @@
-prefix=C:/Users/공-314-34/Downloads/OpenGLStudy-Vertex-Color/OpenGLStudy-Vertex-Color/opengl_work/HelloTriangle/out/install/x64-Debug
+prefix=E:/git/OpenGLStudy/opengl_work/HelloTriangle/out/install/x64-Debug
 exec_prefix=${prefix}
-includedir=C:/Users/공-314-34/Downloads/OpenGLStudy-Vertex-Color/OpenGLStudy-Vertex-Color/opengl_work/HelloTriangle/out/install/x64-Debug/include
-libdir=C:/Users/공-314-34/Downloads/OpenGLStudy-Vertex-Color/OpenGLStudy-Vertex-Color/opengl_work/HelloTriangle/out/install/x64-Debug/lib
+includedir=E:/git/OpenGLStudy/opengl_work/HelloTriangle/out/install/x64-Debug/include
+libdir=E:/git/OpenGLStudy/opengl_work/HelloTriangle/out/install/x64-Debug/lib
 
 Name: GLFW
 Description: A multi-platform library for OpenGL, window and input
