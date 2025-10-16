@@ -34,9 +34,20 @@ else()
   target_link_libraries(TextureSingle PRIVATE glfw glad OpenGL::GL stb_image_obj)
 endif()
 
+add_executable(TextureMix src/main_mix.cpp)
+target_include_directories(TextureMix PRIVATE
+    ${CMAKE_SOURCE_DIR}/include
+    ${GLFW_DIR}/include
+)
+if (WIN32)
+  target_link_libraries(TextureMix PRIVATE glfw glad opengl32 stb_image_obj)
+else()
+  find_package(OpenGL REQUIRED)
+  target_link_libraries(TextureMix PRIVATE glfw glad OpenGL::GL stb_image_obj)
+endif()
 
 # ── 빌드 후 assets/shaders 복사 ──
-foreach(tgt IN ITEMS TextureSingle )
+foreach(tgt IN ITEMS TextureSingle TextureMix)
   add_custom_command(TARGET ${tgt} POST_BUILD
     COMMAND ${CMAKE_COMMAND} -E copy_directory
             ${CMAKE_SOURCE_DIR}/assets
@@ -51,5 +62,6 @@ endforeach()
 if (MSVC)
   set_property(TARGET TextureSingle PROPERTY VS_DEBUGGER_WORKING_DIRECTORY
                "$<TARGET_FILE_DIR:TextureSingle>")
-
+  set_property(TARGET TextureMix    PROPERTY VS_DEBUGGER_WORKING_DIRECTORY
+               "$<TARGET_FILE_DIR:TextureMix>")
 endif()

@@ -144,8 +144,10 @@ int main() {
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 
+    //stbi 이미지 로드
     stbi_set_flip_vertically_on_load(true);
-    int w, h, nc; unsigned char* data = stbi_load("assets/container.jpg", &w, &h, &nc, 0);
+    int w, h, nc; 
+    unsigned char* data = stbi_load("assets/awesomeface.png", &w, &h, &nc, 0);
     if (data) {
         GLenum fmt = (nc == 4) ? GL_RGBA : GL_RGB;
         glTexImage2D(GL_TEXTURE_2D, 0, fmt, w, h, 0, fmt, GL_UNSIGNED_BYTE, data);
@@ -158,12 +160,27 @@ int main() {
     glUniform1i(glGetUniformLocation(prog, "uTex"), 0); // sampler->unit0
 
     while (!glfwWindowShouldClose(win)) {
-        glClearColor(0.1f, 0.1f, 0.12f, 1); glClear(GL_COLOR_BUFFER_BIT);
-        glActiveTexture(GL_TEXTURE0); glBindTexture(GL_TEXTURE_2D, tex);
+        glClearColor(0.1f, 0.1f, 0.12f, 1); 
+        glClear(GL_COLOR_BUFFER_BIT);
+        
+        // 그리기
+        glActiveTexture(GL_TEXTURE0); 
+        glBindTexture(GL_TEXTURE_2D, tex);
         glBindVertexArray(vao);
         glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
-        glfwSwapBuffers(win); glfwPollEvents();
+
+        // 프레임 마무리
+        glfwSwapBuffers(win); 
+        glfwPollEvents();
     }
+    
+    glBindBuffer(GL_ARRAY_BUFFER, 0);
+    glBindVertexArray(0);
+    glDeleteVertexArrays(1, &vao);
+    glDeleteBuffers(1, &vbo);
+    glDeleteBuffers(1, &ebo);
+
+    glfwDestroyWindow(win);
     glfwTerminate();
     return 0;
 }
