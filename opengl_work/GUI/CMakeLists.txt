@@ -1,0 +1,81 @@
+cmake_minimum_required(VERSION 3.10)
+project(GUI LANGUAGES C CXX)
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+# 상위 폴더의 external 경로 계산 (프로젝트 루트 바로 위에 external/가 있다고 가정)
+get_filename_component(EXTERNAL_DIR "${CMAKE_SOURCE_DIR}/../external" ABSOLUTE)
+set(GLFW_DIR "${EXTERNAL_DIR}/glfw-3.4")
+set(GLAD_DIR "${EXTERNAL_DIR}/glad")
+set(GLM_DIR "${EXTERNAL_DIR}/glm")  # header-only
+set(IMGUI_DIR "${EXTERNAL_DIR}/imgui") # ### ImGui 경로 추가 ###
+
+# GLFW 빌드 (외부 소스를 서브디렉터리로 추가)
+add_subdirectory(${GLFW_DIR} ${CMAKE_BINARY_DIR}/glfw_build)
+
+# GLAD 정적 라이브러리
+add_library(glad ${GLAD_DIR}/src/glad.c)
+target_include_directories(glad PUBLIC ${GLAD_DIR}/include)
+
+# ### ImGui 정적 라이브러리 "imgui_lib" 생성 ###
+add_library(imgui_lib STATIC
+    ${IMGUI_DIR}/imgui.cpp
+    ${IMGUI_DIR}/imgui_draw.cpp
+    ${IMGUI_DIR}/imgui_tables.cpp
+    ${IMGUI_DIR}/imgui_widgets.cpp
+    ${IMGUI_DIR}/imgui_demo.cpp
+    ${IMGUI_DIR}/backends/imgui_impl_glfw.cpp
+    ${IMGUI_DIR}/backends/imgui_impl_opengl3.cpp
+)
+# ImGui 라이브러리가 자신의 헤더 및 백엔드 헤더를 찾도록 설정
+target_include_directories(imgui_lib PUBLIC
+    ${IMGUI_DIR}
+    ${IMGUI_DIR}/backends
+)
+# ImGui 백엔드는 glfw 및 glad 타겟에 의존함
+target_link_libraries(imgui_lib PUBLIC glfw glad)
+
+
+# ── stb_image 구현 OBJECT 라이브러리 ──
+add_library(stb_image_obj OBJECT src/stb_image_impl.cpp)
+target_include_directories(stb_image_obj PUBLIC ${CMAKE_SOURCE_DIR}/include)
+
+
+# 실행 파일
+add_executable(${PROJECT_NAME} src/main.cpp )
+
+# 포함 경로
+target_include_directories(${PROJECT_NAME} PRIVATE
+    ${CMAKE_CURRENT_SOURCE_DIR}/include
+    ${GLFW_DIR}/include  # imgui_lib에서 상속받지만 명시해도 무방
+    ${GLM_DIR}
+    # ${IMGUI_DIR}는 imgui_lib 링크 시 자동으로 상속됨 (PUBLIC)
+)
+
+# 링크
+if (WIN32)
+  # ### imgui_lib 링크 추가 ###
+  target_link_libraries(${PROJECT_NAME} PRIVATE glfw glad opengl32 stb_image_obj imgui_lib)
+else()
+  # ### imgui_lib 링크 추가 ###
+  target_link_libraries(${PROJECT_NAME} PRIVATE glfw glad stb_image_obj imgui_lib)
+endif()
+
+# ── 셰이더 상대경로 지원: 빌드 후 shaders/를 실행 파일 폴더로 복사 ──
+add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
+  COMMAND ${CMAKE_COMMAND} -E copy_directory
+          "${CMAKE_CURRENT_SOURCE_DIR}/shaders"
+          "$<TARGET_FILE_DIR:${PROJECT_NAME}>/shaders")
+
+# ── 에셋 복사 추가 ──
+add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
+  COMMAND ${CMAKE_COMMAND} -E copy_directory
+          "${CMAKE_CURRENT_SOURCE_DIR}/assets"
+          "$<TARGET_FILE_DIR:${PROJECT_NAME}>/assets")
+
+# (권장) VS 디버거 작업 디렉터리를 실행 파일 폴더로 고정
+if (MSVC)
+  set_property(TARGET ${PROJECT_NAME} PROPERTY VS_DEBUGGER_WORKING_DIRECTORY
+               "$<TARGET_FILE_DIR:${PROJECT_NAME}>")
+endif()
