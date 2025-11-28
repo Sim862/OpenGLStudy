@@ -45,15 +45,6 @@ float gDiffuseStrength = 1.0f;  // 난반사 계수
 float gSpecularStrength = 0.5f;  // 정반사 계수
 
 
-// 카메라 이동 관련 변수
-//glm::vec3 cameraPos(0.0f, 0.0f, 0.0f);
-//glm::vec3 cameraFront = glm::vec3(0.0f, 0.0f, -1.0f);
-//glm::vec3 cameraUp = glm::vec3(0.0f, 1.0f, 0.0f);
-//
-// 카메라 방향 관련 변수
-//float yaw = -90.0f; // Yaw는 Y축 기준 회전 (초기값 -90은 -Z축을 보게 함)
-//float pitch = 0.0f;  // Pitch는 X축 기준 회전
-//
  //마우스 입력 관련 변수
 float lastX = 800.0f / 2.0f; // 화면 중앙 X
 float lastY = 600.0f / 2.0f; // 화면 중앙 Y
@@ -64,6 +55,19 @@ Camera camera(glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.0f, 1.0f, 0.0f), -90.0f, 
 // 프레임버퍼 크기 변경 콜백: 창이 리사이즈될 때 실제 렌더링 영역(뷰포트)도 맞춰줌
 void framebuffer_size_callback(GLFWwindow* window, int width, int height) {
 	glViewport(0, 0, width, height);
+}
+
+void loadTextureFromFile(char* fileName) {
+	int w, h, nc;
+	stbi_set_flip_vertically_on_load(true);
+	unsigned char* data = stbi_load(fileName, &w, &h, &nc, 0);
+	if (data) {
+		GLenum texFormat = (nc == 3) ? GL_RGB : GL_RGBA;
+		glTexImage2D(GL_TEXTURE_2D, 0, texFormat, w, h, 0, texFormat, GL_UNSIGNED_BYTE, data);
+		glGenerateMipmap(GL_TEXTURE_2D);
+	}
+	stbi_image_free(data);
+
 }
 
 // [추가] ImGui는 키보드/마우스 '클릭' 콜백이 필요함
@@ -142,7 +146,7 @@ void mouse_callback(GLFWwindow* window, double xposIn, double yposIn)
 		lastX = xpos;
 		lastY = ypos;
 
-		camera.MouseSensitivity = 0.0001f;
+		camera.MouseSensitivity = 0.01f;
 
 		firstMouse = false;
 	}
@@ -315,39 +319,28 @@ int main()
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 
-	int w, h, nc;
-	stbi_set_flip_vertically_on_load(true);
-	unsigned char* data = stbi_load("assets/textures/container.jpg", &w, &h, &nc, 0);
-	if (data) {
-		glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, w, h, 0, GL_RGB, GL_UNSIGNED_BYTE, data);
-		glGenerateMipmap(GL_TEXTURE_2D);
-	}
-	stbi_image_free(data);
-	
+	loadTextureFromFile("assets/textures/container2.png");
+
 
 	GLuint texture2;
 	glActiveTexture(GL_TEXTURE1);
 	glGenTextures(1, &texture2);
 
-	// texture2: awesomeface.png (RGBA)
+	// texture2: container2_specular.png (specularMap)
 	glBindTexture(GL_TEXTURE_2D, texture2);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 
-	data = stbi_load("assets/textures/awesomeface.png", &w, &h, &nc, 0);
-	if (data) {
-		glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, w, h, 0, GL_RGBA, GL_UNSIGNED_BYTE, data);
-		glGenerateMipmap(GL_TEXTURE_2D);
-	}
-	stbi_image_free(data);
+	loadTextureFromFile("assets/textures/container2_specular.png");
 
 
 	// 샘플러 유닛 연결(한 번만)
 	ourShader.use();;
 	// [추가] 조명 셰이더용 재질 텍스처 유닛 연결
 	ourShader.setInt("material.diffuse", 0);
+	ourShader.setInt("material.specular", 1);
 
 	// 카메라/투영 기본값
 	int width = 0, height = 0;
