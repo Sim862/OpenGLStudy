@@ -1,0 +1,13 @@
+E:/git/OpenGLStudy/opengl_work/external/assimp-5.2.5/build/CMakeFiles/uninstall.dir
+E:/git/OpenGLStudy/opengl_work/external/assimp-5.2.5/build/CMakeFiles/UpdateAssimpLibsDebugSymbolsAndDLLs.dir
+E:/git/OpenGLStudy/opengl_work/external/assimp-5.2.5/build/CMakeFiles/INSTALL.dir
+E:/git/OpenGLStudy/opengl_work/external/assimp-5.2.5/build/CMakeFiles/ALL_BUILD.dir
+E:/git/OpenGLStudy/opengl_work/external/assimp-5.2.5/build/CMakeFiles/ZERO_CHECK.dir
+E:/git/OpenGLStudy/opengl_work/external/assimp-5.2.5/build/contrib/zlib/CMakeFiles/zlibstatic.dir
+E:/git/OpenGLStudy/opengl_work/external/assimp-5.2.5/build/contrib/zlib/CMakeFiles/INSTALL.dir
+E:/git/OpenGLStudy/opengl_work/external/assimp-5.2.5/build/contrib/zlib/CMakeFiles/ALL_BUILD.dir
+E:/git/OpenGLStudy/opengl_work/external/assimp-5.2.5/build/code/CMakeFiles/assimp.dir
+E:/git/OpenGLStudy/opengl_work/external/assimp-5.2.5/build/code/CMakeFiles/INSTALL.dir
+E:/git/OpenGLStudy/opengl_work/external/assimp-5.2.5/build/test/CMakeFiles/unit.dir
+E:/git/OpenGLStudy/opengl_work/external/assimp-5.2.5/build/test/CMakeFiles/INSTALL.dir
+E:/git/OpenGLStudy/opengl_work/external/assimp-5.2.5/build/test/headercheck/CMakeFiles/INSTALL.dir

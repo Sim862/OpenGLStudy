@@ -1,0 +1,1967 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\Common\Assimp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\CApi\CInterfaceIOWrapper.cpp">
+      <Filter>CApi</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\Common\Compression.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\Common\BaseImporter.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\Common\BaseProcess.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\Common\PostStepRegistry.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\Common\ImporterRegistry.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\Common\DefaultIOStream.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\Common\IOSystem.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\Common\DefaultIOSystem.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\Common\ZipArchiveIOSystem.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\Common\Importer.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\Common\SGSpatialSort.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\Common\VertexTriangleAdjacency.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\Common\SpatialSort.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\Common\SceneCombiner.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\Common\ScenePreprocessor.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\Common\SkeletonMeshBuilder.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\Common\StandardShapes.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\Common\TargetAnimation.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\Common\RemoveComments.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\Common\Subdivision.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\Common\scene.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\Common\Bitmap.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\Common\Version.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\Common\CreateAnimMesh.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\Common\simd.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\Common\material.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\Common\AssertHandler.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\Common\Exceptional.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\Common\Base64.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\Geometry\GeometryUtils.cpp">
+      <Filter>Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\Common\DefaultLogger.cpp">
+      <Filter>Logging</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\Common\Exporter.cpp">
+      <Filter>Exporter</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\CApi\AssimpCExport.cpp">
+      <Filter>Exporter</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\PostProcessing\CalcTangentsProcess.cpp">
+      <Filter>PostProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\PostProcessing\ComputeUVMappingProcess.cpp">
+      <Filter>PostProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\PostProcessing\ConvertToLHProcess.cpp">
+      <Filter>PostProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\PostProcessing\EmbedTexturesProcess.cpp">
+      <Filter>PostProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\PostProcessing\FindDegenerates.cpp">
+      <Filter>PostProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\PostProcessing\FindInstancesProcess.cpp">
+      <Filter>PostProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\PostProcessing\FindInvalidDataProcess.cpp">
+      <Filter>PostProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\PostProcessing\FixNormalsStep.cpp">
+      <Filter>PostProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\PostProcessing\DropFaceNormalsProcess.cpp">
+      <Filter>PostProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\PostProcessing\GenFaceNormalsProcess.cpp">
+      <Filter>PostProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\PostProcessing\GenVertexNormalsProcess.cpp">
+      <Filter>PostProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\PostProcessing\PretransformVertices.cpp">
+      <Filter>PostProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\PostProcessing\ImproveCacheLocality.cpp">
+      <Filter>PostProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\PostProcessing\JoinVerticesProcess.cpp">
+      <Filter>PostProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\PostProcessing\LimitBoneWeightsProcess.cpp">
+      <Filter>PostProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\PostProcessing\RemoveRedundantMaterials.cpp">
+      <Filter>PostProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\PostProcessing\RemoveVCProcess.cpp">
+      <Filter>PostProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\PostProcessing\SortByPTypeProcess.cpp">
+      <Filter>PostProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\PostProcessing\SplitLargeMeshes.cpp">
+      <Filter>PostProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\PostProcessing\TextureTransform.cpp">
+      <Filter>PostProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\PostProcessing\TriangulateProcess.cpp">
+      <Filter>PostProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\PostProcessing\ValidateDataStructure.cpp">
+      <Filter>PostProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\PostProcessing\OptimizeGraph.cpp">
+      <Filter>PostProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\PostProcessing\OptimizeMeshes.cpp">
+      <Filter>PostProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\PostProcessing\DeboneProcess.cpp">
+      <Filter>PostProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\PostProcessing\ProcessHelper.cpp">
+      <Filter>PostProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\PostProcessing\MakeVerboseFormat.cpp">
+      <Filter>PostProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\PostProcessing\ScaleProcess.cpp">
+      <Filter>PostProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\PostProcessing\ArmaturePopulate.cpp">
+      <Filter>PostProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\PostProcessing\GenBoundingBoxesProcess.cpp">
+      <Filter>PostProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\PostProcessing\SplitByBoneCountProcess.cpp">
+      <Filter>PostProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\Material\MaterialSystem.cpp">
+      <Filter>MaterialSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\STEPParser\STEPFileReader.cpp">
+      <Filter>STEPParser</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\STEPParser\STEPFileEncoding.cpp">
+      <Filter>STEPParser</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\glTFCommon\glTFCommon.cpp">
+      <Filter>glTFCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\AMF\AMFImporter.cpp">
+      <Filter>AssetLib\AMF</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\AMF\AMFImporter_Geometry.cpp">
+      <Filter>AssetLib\AMF</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\AMF\AMFImporter_Material.cpp">
+      <Filter>AssetLib\AMF</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\AMF\AMFImporter_Postprocess.cpp">
+      <Filter>AssetLib\AMF</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\3DS\3DSConverter.cpp">
+      <Filter>AssetLib\3DS</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\3DS\3DSLoader.cpp">
+      <Filter>AssetLib\3DS</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\AC\ACLoader.cpp">
+      <Filter>AssetLib\AC</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\ASE\ASELoader.cpp">
+      <Filter>AssetLib\ASE</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\ASE\ASEParser.cpp">
+      <Filter>AssetLib\ASE</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Assbin\AssbinLoader.cpp">
+      <Filter>AssetLib\ASSBIN</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\B3D\B3DImporter.cpp">
+      <Filter>AssetLib\B3D</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\BVH\BVHLoader.cpp">
+      <Filter>AssetLib\BVH</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Collada\ColladaHelper.cpp">
+      <Filter>AssetLib\COLLADA</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Collada\ColladaLoader.cpp">
+      <Filter>AssetLib\COLLADA</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Collada\ColladaParser.cpp">
+      <Filter>AssetLib\COLLADA</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\DXF\DXFLoader.cpp">
+      <Filter>AssetLib\DXF</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\CSM\CSMLoader.cpp">
+      <Filter>AssetLib\CSM</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\HMP\HMPLoader.cpp">
+      <Filter>AssetLib\HMP</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Irr\IRRMeshLoader.cpp">
+      <Filter>AssetLib\IRRMESH</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Irr\IRRShared.cpp">
+      <Filter>AssetLib\IRRMESH</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\IQM\IQMImporter.cpp">
+      <Filter>AssetLib\IQM</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Irr\IRRLoader.cpp">
+      <Filter>AssetLib\IRR</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\LWO\LWOAnimation.cpp">
+      <Filter>AssetLib\LWO</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\LWO\LWOBLoader.cpp">
+      <Filter>AssetLib\LWO</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\LWO\LWOLoader.cpp">
+      <Filter>AssetLib\LWO</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\LWO\LWOMaterial.cpp">
+      <Filter>AssetLib\LWO</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\LWS\LWSLoader.cpp">
+      <Filter>AssetLib\LWS</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\MD2\MD2Loader.cpp">
+      <Filter>AssetLib\MD2</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\MD3\MD3Loader.cpp">
+      <Filter>AssetLib\MD3</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\MD5\MD5Loader.cpp">
+      <Filter>AssetLib\MD5</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\MD5\MD5Parser.cpp">
+      <Filter>AssetLib\MD5</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\MDC\MDCLoader.cpp">
+      <Filter>AssetLib\MDC</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\MDL\MDLLoader.cpp">
+      <Filter>AssetLib\MDL</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\MDL\MDLMaterialLoader.cpp">
+      <Filter>AssetLib\MDL</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\MDL\HalfLife\HL1MDLLoader.cpp">
+      <Filter>AssetLib\MDL</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\MDL\HalfLife\UniqueNameGenerator.cpp">
+      <Filter>AssetLib\MDL</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\NFF\NFFLoader.cpp">
+      <Filter>AssetLib\NFF</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\NDO\NDOLoader.cpp">
+      <Filter>AssetLib\NDO</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\OFF\OFFLoader.cpp">
+      <Filter>AssetLib\OFF</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Obj\ObjFileImporter.cpp">
+      <Filter>AssetLib\OBJ</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Obj\ObjFileMtlImporter.cpp">
+      <Filter>AssetLib\OBJ</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Obj\ObjFileParser.cpp">
+      <Filter>AssetLib\OBJ</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Ogre\OgreImporter.cpp">
+      <Filter>AssetLib\OGRE</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Ogre\OgreStructs.cpp">
+      <Filter>AssetLib\OGRE</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Ogre\OgreBinarySerializer.cpp">
+      <Filter>AssetLib\OGRE</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Ogre\OgreXmlSerializer.cpp">
+      <Filter>AssetLib\OGRE</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Ogre\OgreMaterial.cpp">
+      <Filter>AssetLib\OGRE</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\OpenGEX\OpenGEXImporter.cpp">
+      <Filter>AssetLib\OPENGEX</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Ply\PlyLoader.cpp">
+      <Filter>AssetLib\PLY</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Ply\PlyParser.cpp">
+      <Filter>AssetLib\PLY</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\MS3D\MS3DLoader.cpp">
+      <Filter>AssetLib\MS3D</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\COB\COBLoader.cpp">
+      <Filter>AssetLib\COB</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Blender\BlenderLoader.cpp">
+      <Filter>AssetLib\BLEND</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Blender\BlenderDNA.cpp">
+      <Filter>AssetLib\BLEND</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Blender\BlenderScene.cpp">
+      <Filter>AssetLib\BLEND</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Blender\BlenderModifier.cpp">
+      <Filter>AssetLib\BLEND</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Blender\BlenderBMesh.cpp">
+      <Filter>AssetLib\BLEND</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Blender\BlenderTessellator.cpp">
+      <Filter>AssetLib\BLEND</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Blender\BlenderCustomData.cpp">
+      <Filter>AssetLib\BLEND</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\IFC\IFCLoader.cpp">
+      <Filter>AssetLib\IFC</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\IFC\IFCReaderGen1_2x3.cpp">
+      <Filter>AssetLib\IFC</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\IFC\IFCReaderGen2_2x3.cpp">
+      <Filter>AssetLib\IFC</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\IFC\IFCUtil.cpp">
+      <Filter>AssetLib\IFC</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\IFC\IFCGeometry.cpp">
+      <Filter>AssetLib\IFC</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\IFC\IFCMaterial.cpp">
+      <Filter>AssetLib\IFC</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\IFC\IFCProfile.cpp">
+      <Filter>AssetLib\IFC</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\IFC\IFCCurve.cpp">
+      <Filter>AssetLib\IFC</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\IFC\IFCBoolean.cpp">
+      <Filter>AssetLib\IFC</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\IFC\IFCOpenings.cpp">
+      <Filter>AssetLib\IFC</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\XGL\XGLLoader.cpp">
+      <Filter>AssetLib\XGL</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\FBX\FBXImporter.cpp">
+      <Filter>AssetLib\FBX</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\FBX\FBXParser.cpp">
+      <Filter>AssetLib\FBX</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\FBX\FBXTokenizer.cpp">
+      <Filter>AssetLib\FBX</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\FBX\FBXConverter.cpp">
+      <Filter>AssetLib\FBX</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\FBX\FBXDocument.cpp">
+      <Filter>AssetLib\FBX</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\FBX\FBXProperties.cpp">
+      <Filter>AssetLib\FBX</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\FBX\FBXMeshGeometry.cpp">
+      <Filter>AssetLib\FBX</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\FBX\FBXMaterial.cpp">
+      <Filter>AssetLib\FBX</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\FBX\FBXModel.cpp">
+      <Filter>AssetLib\FBX</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\FBX\FBXAnimation.cpp">
+      <Filter>AssetLib\FBX</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\FBX\FBXNodeAttribute.cpp">
+      <Filter>AssetLib\FBX</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\FBX\FBXDeformer.cpp">
+      <Filter>AssetLib\FBX</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\FBX\FBXBinaryTokenizer.cpp">
+      <Filter>AssetLib\FBX</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\FBX\FBXDocumentUtil.cpp">
+      <Filter>AssetLib\FBX</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Q3D\Q3DLoader.cpp">
+      <Filter>AssetLib\Q3D</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Q3BSP\Q3BSPFileParser.cpp">
+      <Filter>AssetLib\Q3BSP</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Q3BSP\Q3BSPFileImporter.cpp">
+      <Filter>AssetLib\Q3BSP</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Raw\RawLoader.cpp">
+      <Filter>AssetLib\RAW</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\SIB\SIBImporter.cpp">
+      <Filter>AssetLib\SIB</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\SMD\SMDLoader.cpp">
+      <Filter>AssetLib\SMD</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\STL\STLLoader.cpp">
+      <Filter>AssetLib\STL</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Terragen\TerragenLoader.cpp">
+      <Filter>AssetLib\TERRAGEN</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Unreal\UnrealLoader.cpp">
+      <Filter>AssetLib\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\X\XFileImporter.cpp">
+      <Filter>AssetLib\X</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\X\XFileParser.cpp">
+      <Filter>AssetLib\X</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\X3D\X3DImporter.cpp">
+      <Filter>AssetLib\X3D</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\X3D\X3DImporter_Geometry2D.cpp">
+      <Filter>AssetLib\X3D</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\X3D\X3DImporter_Geometry3D.cpp">
+      <Filter>AssetLib\X3D</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\X3D\X3DImporter_Group.cpp">
+      <Filter>AssetLib\X3D</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\X3D\X3DImporter_Light.cpp">
+      <Filter>AssetLib\X3D</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\X3D\X3DImporter_Metadata.cpp">
+      <Filter>AssetLib\X3D</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\X3D\X3DImporter_Networking.cpp">
+      <Filter>AssetLib\X3D</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\X3D\X3DImporter_Postprocess.cpp">
+      <Filter>AssetLib\X3D</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\X3D\X3DImporter_Rendering.cpp">
+      <Filter>AssetLib\X3D</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\X3D\X3DImporter_Shape.cpp">
+      <Filter>AssetLib\X3D</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\X3D\X3DImporter_Texturing.cpp">
+      <Filter>AssetLib\X3D</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\X3D\X3DGeoHelper.cpp">
+      <Filter>AssetLib\X3D</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\X3D\X3DXmlHelper.cpp">
+      <Filter>AssetLib\X3D</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\VRML\VrmlConverter.cpp">
+      <Filter>AssetLib\X3D</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\glTF\glTFImporter.cpp">
+      <Filter>AssetLib\GLTF</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\glTF2\glTF2Importer.cpp">
+      <Filter>AssetLib\GLTF</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\3MF\XmlSerializer.cpp">
+      <Filter>AssetLib\3MF</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\3MF\D3MFImporter.cpp">
+      <Filter>AssetLib\3MF</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\3MF\D3MFOpcPackage.cpp">
+      <Filter>AssetLib\3MF</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\MMD\MMDImporter.cpp">
+      <Filter>AssetLib\MMD</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\MMD\MMDPmxParser.cpp">
+      <Filter>AssetLib\MMD</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Obj\ObjExporter.cpp">
+      <Filter>AssetLib\OBJ</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\OpenGEX\OpenGEXExporter.cpp">
+      <Filter>AssetLib\OPENGEX</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Ply\PlyExporter.cpp">
+      <Filter>AssetLib\PLY</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\3DS\3DSExporter.cpp">
+      <Filter>AssetLib\3DS</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Assbin\AssbinExporter.cpp">
+      <Filter>AssetLib\ASSBIN</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Assbin\AssbinFileWriter.cpp">
+      <Filter>AssetLib\ASSBIN</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Assxml\AssxmlExporter.cpp">
+      <Filter>AssetLib\ASSXML</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Assxml\AssxmlFileWriter.cpp">
+      <Filter>AssetLib\ASSXML</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Collada\ColladaExporter.cpp">
+      <Filter>AssetLib\COLLADA</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\FBX\FBXExporter.cpp">
+      <Filter>AssetLib\FBX</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\FBX\FBXExportNode.cpp">
+      <Filter>AssetLib\FBX</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\FBX\FBXExportProperty.cpp">
+      <Filter>AssetLib\FBX</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\STL\STLExporter.cpp">
+      <Filter>AssetLib\STL</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\X\XFileExporter.cpp">
+      <Filter>AssetLib\X</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\X3D\X3DExporter.cpp">
+      <Filter>AssetLib\X3D</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\glTF\glTFExporter.cpp">
+      <Filter>AssetLib\GLTF</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\glTF2\glTF2Exporter.cpp">
+      <Filter>AssetLib\GLTF</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\3MF\D3MFExporter.cpp">
+      <Filter>AssetLib\3MF</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\Pbrt\PbrtExporter.cpp">
+      <Filter>AssetLib\PBRT</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Assjson\cencode.c">
+      <Filter>AssetLib\ASSJSON</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Assjson\json_exporter.cpp">
+      <Filter>AssetLib\ASSJSON</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Assjson\mesh_splitter.cpp">
+      <Filter>AssetLib\ASSJSON</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Step\StepExporter.cpp">
+      <Filter>AssetLib\STEP</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\FBX\FBXUtil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\contrib\unzip\ioapi.c">
+      <Filter>Contrib\unzip</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\contrib\unzip\unzip.c">
+      <Filter>Contrib\unzip</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\contrib\poly2tri\poly2tri\common\shapes.cc">
+      <Filter>Contrib\Poly2Tri</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\contrib\poly2tri\poly2tri\sweep\advancing_front.cc">
+      <Filter>Contrib\Poly2Tri</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\contrib\poly2tri\poly2tri\sweep\cdt.cc">
+      <Filter>Contrib\Poly2Tri</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\contrib\poly2tri\poly2tri\sweep\sweep.cc">
+      <Filter>Contrib\Poly2Tri</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\contrib\poly2tri\poly2tri\sweep\sweep_context.cc">
+      <Filter>Contrib\Poly2Tri</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\contrib\clipper\clipper.cpp">
+      <Filter>Contrib\Clipper</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\contrib\openddlparser\code\OpenDDLParser.cpp">
+      <Filter>Contrib\openddl_parser</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\contrib\openddlparser\code\DDLNode.cpp">
+      <Filter>Contrib\openddl_parser</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\contrib\openddlparser\code\OpenDDLCommon.cpp">
+      <Filter>Contrib\openddl_parser</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\contrib\openddlparser\code\OpenDDLExport.cpp">
+      <Filter>Contrib\openddl_parser</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\contrib\openddlparser\code\Value.cpp">
+      <Filter>Contrib\openddl_parser</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\contrib\openddlparser\code\OpenDDLStream.cpp">
+      <Filter>Contrib\openddl_parser</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\contrib\Open3DGC\o3dgcArithmeticCodec.cpp">
+      <Filter>Contrib\open3dgc</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\contrib\Open3DGC\o3dgcDynamicVectorDecoder.cpp">
+      <Filter>Contrib\open3dgc</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\contrib\Open3DGC\o3dgcDynamicVectorEncoder.cpp">
+      <Filter>Contrib\open3dgc</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\contrib\Open3DGC\o3dgcTools.cpp">
+      <Filter>Contrib\open3dgc</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\contrib\Open3DGC\o3dgcTriangleFans.cpp">
+      <Filter>Contrib\open3dgc</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\contrib\zip\src\zip.c">
+      <Filter>ziplib</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\contrib\pugixml\src\pugixml.cpp">
+      <Filter>Contrib\Pugixml</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\CApi\CInterfaceIOWrapper.h">
+      <Filter>CApi</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\Common\StbCommon.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\Common\Compression.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\Common\BaseProcess.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\Common\Importer.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\Common\ScenePrivate.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\Common\DefaultProgressHandler.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\Common\PolyTools.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\Common\Maybe.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\Common\IFF.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\Common\VertexTriangleAdjacency.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\Common\ScenePreprocessor.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\Common\StackAllocator.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\Common\StackAllocator.inl">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\Common\TargetAnimation.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\Common\simd.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\Geometry\GeometryUtils.h">
+      <Filter>Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\DefaultLogger.hpp">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\LogStream.hpp">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\Logger.hpp">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\NullLogger.hpp">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\Common\Win32DebugLogStream.h">
+      <Filter>Logging</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\Common\FileLogStream.h">
+      <Filter>Logging</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\Common\StdOStreamLogStream.h">
+      <Filter>Logging</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\BlobIOSystem.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\PostProcessing\CalcTangentsProcess.h">
+      <Filter>PostProcessing</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\PostProcessing\ComputeUVMappingProcess.h">
+      <Filter>PostProcessing</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\PostProcessing\ConvertToLHProcess.h">
+      <Filter>PostProcessing</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\PostProcessing\EmbedTexturesProcess.h">
+      <Filter>PostProcessing</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\PostProcessing\FindDegenerates.h">
+      <Filter>PostProcessing</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\PostProcessing\FindInstancesProcess.h">
+      <Filter>PostProcessing</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\PostProcessing\FindInvalidDataProcess.h">
+      <Filter>PostProcessing</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\PostProcessing\FixNormalsStep.h">
+      <Filter>PostProcessing</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\PostProcessing\DropFaceNormalsProcess.h">
+      <Filter>PostProcessing</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\PostProcessing\GenFaceNormalsProcess.h">
+      <Filter>PostProcessing</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\PostProcessing\GenVertexNormalsProcess.h">
+      <Filter>PostProcessing</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\PostProcessing\PretransformVertices.h">
+      <Filter>PostProcessing</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\PostProcessing\ImproveCacheLocality.h">
+      <Filter>PostProcessing</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\PostProcessing\JoinVerticesProcess.h">
+      <Filter>PostProcessing</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\PostProcessing\LimitBoneWeightsProcess.h">
+      <Filter>PostProcessing</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\PostProcessing\RemoveRedundantMaterials.h">
+      <Filter>PostProcessing</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\PostProcessing\RemoveVCProcess.h">
+      <Filter>PostProcessing</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\PostProcessing\SortByPTypeProcess.h">
+      <Filter>PostProcessing</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\PostProcessing\SplitLargeMeshes.h">
+      <Filter>PostProcessing</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\PostProcessing\TextureTransform.h">
+      <Filter>PostProcessing</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\PostProcessing\TriangulateProcess.h">
+      <Filter>PostProcessing</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\PostProcessing\ValidateDataStructure.h">
+      <Filter>PostProcessing</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\PostProcessing\OptimizeGraph.h">
+      <Filter>PostProcessing</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\PostProcessing\OptimizeMeshes.h">
+      <Filter>PostProcessing</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\PostProcessing\DeboneProcess.h">
+      <Filter>PostProcessing</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\PostProcessing\ProcessHelper.h">
+      <Filter>PostProcessing</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\PostProcessing\MakeVerboseFormat.h">
+      <Filter>PostProcessing</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\PostProcessing\ScaleProcess.h">
+      <Filter>PostProcessing</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\PostProcessing\ArmaturePopulate.h">
+      <Filter>PostProcessing</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\PostProcessing\GenBoundingBoxesProcess.h">
+      <Filter>PostProcessing</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\PostProcessing\SplitByBoneCountProcess.h">
+      <Filter>PostProcessing</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\Material\MaterialSystem.h">
+      <Filter>MaterialSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\STEPParser\STEPFileReader.h">
+      <Filter>STEPParser</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\STEPParser\STEPFileEncoding.h">
+      <Filter>STEPParser</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\glTFCommon\glTFCommon.h">
+      <Filter>glTFCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\AMF\AMFImporter.hpp">
+      <Filter>AssetLib\AMF</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\AMF\AMFImporter_Node.hpp">
+      <Filter>AssetLib\AMF</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\3DS\3DSHelper.h">
+      <Filter>AssetLib\3DS</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\3DS\3DSLoader.h">
+      <Filter>AssetLib\3DS</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\AC\ACLoader.h">
+      <Filter>AssetLib\AC</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\ASE\ASELoader.h">
+      <Filter>AssetLib\ASE</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\ASE\ASEParser.h">
+      <Filter>AssetLib\ASE</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Assbin\AssbinLoader.h">
+      <Filter>AssetLib\ASSBIN</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\B3D\B3DImporter.h">
+      <Filter>AssetLib\B3D</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\BVH\BVHLoader.h">
+      <Filter>AssetLib\BVH</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Collada\ColladaHelper.h">
+      <Filter>AssetLib\COLLADA</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Collada\ColladaLoader.h">
+      <Filter>AssetLib\COLLADA</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Collada\ColladaParser.h">
+      <Filter>AssetLib\COLLADA</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\DXF\DXFLoader.h">
+      <Filter>AssetLib\DXF</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\DXF\DXFHelper.h">
+      <Filter>AssetLib\DXF</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\CSM\CSMLoader.h">
+      <Filter>AssetLib\CSM</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\HMP\HMPFileData.h">
+      <Filter>AssetLib\HMP</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\HMP\HMPLoader.h">
+      <Filter>AssetLib\HMP</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\HMP\HalfLifeFileData.h">
+      <Filter>AssetLib\HMP</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Irr\IRRMeshLoader.h">
+      <Filter>AssetLib\IRRMESH</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Irr\IRRShared.h">
+      <Filter>AssetLib\IRRMESH</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\IQM\iqm.h">
+      <Filter>AssetLib\IQM</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\IQM\IQMImporter.h">
+      <Filter>AssetLib\IQM</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Irr\IRRLoader.h">
+      <Filter>AssetLib\IRR</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\LWO\LWOAnimation.h">
+      <Filter>AssetLib\LWO</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\LWO\LWOFileData.h">
+      <Filter>AssetLib\LWO</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\LWO\LWOLoader.h">
+      <Filter>AssetLib\LWO</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\LWS\LWSLoader.h">
+      <Filter>AssetLib\LWS</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\MD2\MD2FileData.h">
+      <Filter>AssetLib\MD2</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\MD2\MD2Loader.h">
+      <Filter>AssetLib\MD2</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\MD2\MD2NormalTable.h">
+      <Filter>AssetLib\MD2</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\MD3\MD3FileData.h">
+      <Filter>AssetLib\MD3</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\MD3\MD3Loader.h">
+      <Filter>AssetLib\MD3</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\MD5\MD5Loader.h">
+      <Filter>AssetLib\MD5</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\MD5\MD5Parser.h">
+      <Filter>AssetLib\MD5</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\MDC\MDCFileData.h">
+      <Filter>AssetLib\MDC</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\MDC\MDCLoader.h">
+      <Filter>AssetLib\MDC</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\MDC\MDCNormalTable.h">
+      <Filter>AssetLib\MDC</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\MDL\MDLDefaultColorMap.h">
+      <Filter>AssetLib\MDL</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\MDL\MDLFileData.h">
+      <Filter>AssetLib\MDL</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\MDL\MDLLoader.h">
+      <Filter>AssetLib\MDL</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\MDL\HalfLife\HalfLifeMDLBaseHeader.h">
+      <Filter>AssetLib\MDL</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\MDL\HalfLife\HL1FileData.h">
+      <Filter>AssetLib\MDL</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\MDL\HalfLife\HL1MDLLoader.h">
+      <Filter>AssetLib\MDL</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\MDL\HalfLife\HL1ImportDefinitions.h">
+      <Filter>AssetLib\MDL</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\MDL\HalfLife\HL1ImportSettings.h">
+      <Filter>AssetLib\MDL</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\MDL\HalfLife\HL1MeshTrivert.h">
+      <Filter>AssetLib\MDL</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\MDL\HalfLife\LogFunctions.h">
+      <Filter>AssetLib\MDL</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\MDL\HalfLife\UniqueNameGenerator.h">
+      <Filter>AssetLib\MDL</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\NFF\NFFLoader.h">
+      <Filter>AssetLib\NFF</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\NDO\NDOLoader.h">
+      <Filter>AssetLib\NDO</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\OFF\OFFLoader.h">
+      <Filter>AssetLib\OFF</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Obj\ObjFileData.h">
+      <Filter>AssetLib\OBJ</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Obj\ObjFileImporter.h">
+      <Filter>AssetLib\OBJ</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Obj\ObjFileMtlImporter.h">
+      <Filter>AssetLib\OBJ</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Obj\ObjFileParser.h">
+      <Filter>AssetLib\OBJ</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Obj\ObjTools.h">
+      <Filter>AssetLib\OBJ</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Ogre\OgreImporter.h">
+      <Filter>AssetLib\OGRE</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Ogre\OgreStructs.h">
+      <Filter>AssetLib\OGRE</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Ogre\OgreParsingUtils.h">
+      <Filter>AssetLib\OGRE</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Ogre\OgreBinarySerializer.h">
+      <Filter>AssetLib\OGRE</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Ogre\OgreXmlSerializer.h">
+      <Filter>AssetLib\OGRE</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\OpenGEX\OpenGEXImporter.h">
+      <Filter>AssetLib\OPENGEX</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\OpenGEX\OpenGEXStructs.h">
+      <Filter>AssetLib\OPENGEX</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Ply\PlyLoader.h">
+      <Filter>AssetLib\PLY</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Ply\PlyParser.h">
+      <Filter>AssetLib\PLY</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\MS3D\MS3DLoader.h">
+      <Filter>AssetLib\MS3D</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\COB\COBLoader.h">
+      <Filter>AssetLib\COB</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\COB\COBScene.h">
+      <Filter>AssetLib\COB</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Blender\BlenderLoader.h">
+      <Filter>AssetLib\BLEND</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Blender\BlenderDNA.h">
+      <Filter>AssetLib\BLEND</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Blender\BlenderDNA.inl">
+      <Filter>AssetLib\BLEND</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Blender\BlenderScene.h">
+      <Filter>AssetLib\BLEND</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Blender\BlenderSceneGen.h">
+      <Filter>AssetLib\BLEND</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Blender\BlenderIntermediate.h">
+      <Filter>AssetLib\BLEND</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Blender\BlenderModifier.h">
+      <Filter>AssetLib\BLEND</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Blender\BlenderBMesh.h">
+      <Filter>AssetLib\BLEND</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Blender\BlenderTessellator.h">
+      <Filter>AssetLib\BLEND</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Blender\BlenderCustomData.h">
+      <Filter>AssetLib\BLEND</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\IFC\IFCLoader.h">
+      <Filter>AssetLib\IFC</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\IFC\IFCReaderGen_2x3.h">
+      <Filter>AssetLib\IFC</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\IFC\IFCUtil.h">
+      <Filter>AssetLib\IFC</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\XGL\XGLLoader.h">
+      <Filter>AssetLib\XGL</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\FBX\FBXCompileConfig.h">
+      <Filter>AssetLib\FBX</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\FBX\FBXImporter.h">
+      <Filter>AssetLib\FBX</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\FBX\FBXParser.h">
+      <Filter>AssetLib\FBX</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\FBX\FBXTokenizer.h">
+      <Filter>AssetLib\FBX</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\FBX\FBXImportSettings.h">
+      <Filter>AssetLib\FBX</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\FBX\FBXConverter.h">
+      <Filter>AssetLib\FBX</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\FBX\FBXDocument.h">
+      <Filter>AssetLib\FBX</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\FBX\FBXProperties.h">
+      <Filter>AssetLib\FBX</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\FBX\FBXMeshGeometry.h">
+      <Filter>AssetLib\FBX</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Q3D\Q3DLoader.h">
+      <Filter>AssetLib\Q3D</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Q3BSP\Q3BSPFileData.h">
+      <Filter>AssetLib\Q3BSP</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Q3BSP\Q3BSPFileParser.h">
+      <Filter>AssetLib\Q3BSP</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Q3BSP\Q3BSPFileImporter.h">
+      <Filter>AssetLib\Q3BSP</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Raw\RawLoader.h">
+      <Filter>AssetLib\RAW</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\SIB\SIBImporter.h">
+      <Filter>AssetLib\SIB</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\SMD\SMDLoader.h">
+      <Filter>AssetLib\SMD</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\STL\STLLoader.h">
+      <Filter>AssetLib\STL</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Terragen\TerragenLoader.h">
+      <Filter>AssetLib\TERRAGEN</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Unreal\UnrealLoader.h">
+      <Filter>AssetLib\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\X\XFileHelper.h">
+      <Filter>AssetLib\X</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\X\XFileImporter.h">
+      <Filter>AssetLib\X</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\X\XFileParser.h">
+      <Filter>AssetLib\X</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\X3D\X3DImporter.hpp">
+      <Filter>AssetLib\X3D</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\X3D\X3DImporter_Macro.hpp">
+      <Filter>AssetLib\X3D</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\X3D\X3DImporter_Node.hpp">
+      <Filter>AssetLib\X3D</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\X3D\X3DGeoHelper.h">
+      <Filter>AssetLib\X3D</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\X3D\X3DXmlHelper.h">
+      <Filter>AssetLib\X3D</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\glTF\glTFAsset.h">
+      <Filter>AssetLib\GLTF</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\glTF\glTFAsset.inl">
+      <Filter>AssetLib\GLTF</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\glTF\glTFAssetWriter.h">
+      <Filter>AssetLib\GLTF</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\glTF\glTFAssetWriter.inl">
+      <Filter>AssetLib\GLTF</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\glTF\glTFImporter.h">
+      <Filter>AssetLib\GLTF</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\glTF2\glTF2Asset.h">
+      <Filter>AssetLib\GLTF</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\glTF2\glTF2Asset.inl">
+      <Filter>AssetLib\GLTF</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\glTF2\glTF2AssetWriter.h">
+      <Filter>AssetLib\GLTF</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\glTF2\glTF2AssetWriter.inl">
+      <Filter>AssetLib\GLTF</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\glTF2\glTF2Importer.h">
+      <Filter>AssetLib\GLTF</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\3MF\3MFTypes.h">
+      <Filter>AssetLib\3MF</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\3MF\XmlSerializer.h">
+      <Filter>AssetLib\3MF</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\3MF\D3MFImporter.h">
+      <Filter>AssetLib\3MF</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\3MF\D3MFOpcPackage.h">
+      <Filter>AssetLib\3MF</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\3MF\3MFXmlTags.h">
+      <Filter>AssetLib\3MF</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\MMD\MMDCpp14.h">
+      <Filter>AssetLib\MMD</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\MMD\MMDImporter.h">
+      <Filter>AssetLib\MMD</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\MMD\MMDPmdParser.h">
+      <Filter>AssetLib\MMD</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\MMD\MMDPmxParser.h">
+      <Filter>AssetLib\MMD</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\MMD\MMDVmdParser.h">
+      <Filter>AssetLib\MMD</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Obj\ObjExporter.h">
+      <Filter>AssetLib\OBJ</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\OpenGEX\OpenGEXExporter.h">
+      <Filter>AssetLib\OPENGEX</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Ply\PlyExporter.h">
+      <Filter>AssetLib\PLY</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\3DS\3DSExporter.h">
+      <Filter>AssetLib\3DS</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Assbin\AssbinExporter.h">
+      <Filter>AssetLib\ASSBIN</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Assbin\AssbinFileWriter.h">
+      <Filter>AssetLib\ASSBIN</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Assxml\AssxmlExporter.h">
+      <Filter>AssetLib\ASSXML</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Assxml\AssxmlFileWriter.h">
+      <Filter>AssetLib\ASSXML</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Collada\ColladaExporter.h">
+      <Filter>AssetLib\COLLADA</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\FBX\FBXExporter.h">
+      <Filter>AssetLib\FBX</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\FBX\FBXExportNode.h">
+      <Filter>AssetLib\FBX</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\FBX\FBXExportProperty.h">
+      <Filter>AssetLib\FBX</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\STL\STLExporter.h">
+      <Filter>AssetLib\STL</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\X\XFileExporter.h">
+      <Filter>AssetLib\X</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\X3D\X3DExporter.hpp">
+      <Filter>AssetLib\X3D</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\glTF\glTFExporter.h">
+      <Filter>AssetLib\GLTF</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\glTF2\glTF2Exporter.h">
+      <Filter>AssetLib\GLTF</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\3MF\D3MFExporter.h">
+      <Filter>AssetLib\3MF</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\Pbrt\PbrtExporter.h">
+      <Filter>AssetLib\PBRT</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Assjson\cencode.h">
+      <Filter>AssetLib\ASSJSON</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Assjson\mesh_splitter.h">
+      <Filter>AssetLib\ASSJSON</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\Step\StepExporter.h">
+      <Filter>AssetLib\STEP</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\FBX\FBXUtil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\AssetLib\FBX\FBXCommon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\contrib\unzip\crypt.h">
+      <Filter>Contrib\unzip</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\contrib\unzip\ioapi.h">
+      <Filter>Contrib\unzip</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\contrib\unzip\unzip.h">
+      <Filter>Contrib\unzip</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\contrib\poly2tri\poly2tri\common\shapes.h">
+      <Filter>Contrib\Poly2Tri</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\contrib\poly2tri\poly2tri\common\utils.h">
+      <Filter>Contrib\Poly2Tri</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\contrib\poly2tri\poly2tri\sweep\advancing_front.h">
+      <Filter>Contrib\Poly2Tri</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\contrib\poly2tri\poly2tri\sweep\cdt.h">
+      <Filter>Contrib\Poly2Tri</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\contrib\poly2tri\poly2tri\sweep\sweep.h">
+      <Filter>Contrib\Poly2Tri</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\contrib\poly2tri\poly2tri\sweep\sweep_context.h">
+      <Filter>Contrib\Poly2Tri</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\contrib\clipper\clipper.hpp">
+      <Filter>Contrib\Clipper</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\contrib\openddlparser\include\openddlparser\OpenDDLParser.h">
+      <Filter>Contrib\openddl_parser</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\contrib\openddlparser\include\openddlparser\OpenDDLParserUtils.h">
+      <Filter>Contrib\openddl_parser</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\contrib\openddlparser\include\openddlparser\OpenDDLCommon.h">
+      <Filter>Contrib\openddl_parser</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\contrib\openddlparser\include\openddlparser\OpenDDLExport.h">
+      <Filter>Contrib\openddl_parser</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\contrib\openddlparser\include\openddlparser\OpenDDLStream.h">
+      <Filter>Contrib\openddl_parser</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\contrib\openddlparser\include\openddlparser\DDLNode.h">
+      <Filter>Contrib\openddl_parser</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\contrib\openddlparser\include\openddlparser\Value.h">
+      <Filter>Contrib\openddl_parser</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\contrib\Open3DGC\o3dgcAdjacencyInfo.h">
+      <Filter>Contrib\open3dgc</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\contrib\Open3DGC\o3dgcArithmeticCodec.h">
+      <Filter>Contrib\open3dgc</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\contrib\Open3DGC\o3dgcBinaryStream.h">
+      <Filter>Contrib\open3dgc</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\contrib\Open3DGC\o3dgcCommon.h">
+      <Filter>Contrib\open3dgc</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\contrib\Open3DGC\o3dgcDVEncodeParams.h">
+      <Filter>Contrib\open3dgc</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\contrib\Open3DGC\o3dgcDynamicVectorDecoder.h">
+      <Filter>Contrib\open3dgc</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\contrib\Open3DGC\o3dgcDynamicVectorEncoder.h">
+      <Filter>Contrib\open3dgc</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\contrib\Open3DGC\o3dgcDynamicVector.h">
+      <Filter>Contrib\open3dgc</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\contrib\Open3DGC\o3dgcFIFO.h">
+      <Filter>Contrib\open3dgc</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\contrib\Open3DGC\o3dgcIndexedFaceSet.h">
+      <Filter>Contrib\open3dgc</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\contrib\Open3DGC\o3dgcIndexedFaceSet.inl">
+      <Filter>Contrib\open3dgc</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\contrib\Open3DGC\o3dgcSC3DMCDecoder.h">
+      <Filter>Contrib\open3dgc</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\contrib\Open3DGC\o3dgcSC3DMCDecoder.inl">
+      <Filter>Contrib\open3dgc</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\contrib\Open3DGC\o3dgcSC3DMCEncodeParams.h">
+      <Filter>Contrib\open3dgc</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\contrib\Open3DGC\o3dgcSC3DMCEncoder.h">
+      <Filter>Contrib\open3dgc</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\contrib\Open3DGC\o3dgcSC3DMCEncoder.inl">
+      <Filter>Contrib\open3dgc</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\contrib\Open3DGC\o3dgcTimer.h">
+      <Filter>Contrib\open3dgc</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\contrib\Open3DGC\o3dgcTriangleFans.h">
+      <Filter>Contrib\open3dgc</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\contrib\Open3DGC\o3dgcTriangleListDecoder.h">
+      <Filter>Contrib\open3dgc</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\contrib\Open3DGC\o3dgcTriangleListDecoder.inl">
+      <Filter>Contrib\open3dgc</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\contrib\Open3DGC\o3dgcTriangleListEncoder.h">
+      <Filter>Contrib\open3dgc</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\contrib\Open3DGC\o3dgcTriangleListEncoder.inl">
+      <Filter>Contrib\open3dgc</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\contrib\Open3DGC\o3dgcVector.h">
+      <Filter>Contrib\open3dgc</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\contrib\Open3DGC\o3dgcVector.inl">
+      <Filter>Contrib\open3dgc</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\contrib\zip\src\miniz.h">
+      <Filter>ziplib</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\contrib\zip\src\zip.h">
+      <Filter>ziplib</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\contrib\pugixml\src\pugiconfig.hpp">
+      <Filter>Contrib\Pugixml</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\contrib\pugixml\src\pugixml.hpp">
+      <Filter>Contrib\Pugixml</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\contrib\stb\stb_image.h">
+      <Filter>Contrib\stb</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\anim.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\aabb.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\ai_assert.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\camera.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\color4.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\color4.inl">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\build\include\assimp\config.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\ColladaMetaData.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\commonMetaData.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\defs.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\cfileio.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\light.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\material.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\material.inl">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\matrix3x3.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\matrix3x3.inl">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\matrix4x4.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\matrix4x4.inl">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\mesh.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\ObjMaterial.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\pbrmaterial.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\GltfMaterial.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\postprocess.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\quaternion.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\quaternion.inl">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\scene.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\metadata.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\texture.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\types.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\vector2.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\vector2.inl">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\vector3.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\vector3.inl">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\version.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\cimport.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\AssertHandler.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\importerdesc.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\Importer.hpp">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\ProgressHandler.hpp">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\IOStream.hpp">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\IOSystem.hpp">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\cexport.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\Exporter.hpp">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\DefaultIOStream.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\DefaultIOSystem.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\ZipArchiveIOSystem.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\SceneCombiner.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\fast_atof.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\qnan.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\BaseImporter.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\Hash.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\MemoryIOWrapper.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\ParsingUtils.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\StreamReader.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\StreamWriter.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\StringComparison.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\StringUtils.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\SGSpatialSort.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\GenericProperty.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\SpatialSort.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\SkeletonMeshBuilder.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\SmallVector.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\SmoothingGroups.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\SmoothingGroups.inl">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\StandardShapes.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\RemoveComments.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\Subdivision.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\Vertex.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\LineSplitter.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\TinyFormatter.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\Profiler.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\LogAux.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\Bitmap.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\XMLTools.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\IOStreamBuffer.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\CreateAnimMesh.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\XmlParser.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\MathFunctions.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\Exceptional.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\ByteSwapper.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\Base64.hpp">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\Compiler\pushpack1.h">
+      <Filter>Compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\Compiler\poppack1.h">
+      <Filter>Compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\include\assimp\Compiler\pstdint.h">
+      <Filter>Compiler</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="E:\git\OpenGLStudy\opengl_work\external\assimp-5.2.5\code\res\assimp.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="AssetLib">
+      <UniqueIdentifier>{23ECDEB0-9FE6-30F3-89E6-4A70F6607D95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetLib\3D">
+      <UniqueIdentifier>{AA0A2349-1829-3BFF-B612-CECBC4E811D0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetLib\3DS">
+      <UniqueIdentifier>{B95173D3-644D-31F6-8CD5-03DCA52A0D98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetLib\3MF">
+      <UniqueIdentifier>{7CA09720-A4FE-3225-8203-4C3A39CDFB75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetLib\AC">
+      <UniqueIdentifier>{BA00EDA2-C120-3C8C-BE33-40E6F06CD11F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetLib\AMF">
+      <UniqueIdentifier>{C8F5F996-53D8-338A-A455-BA810DDF28C2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetLib\ASE">
+      <UniqueIdentifier>{0DAE5551-EB3C-3647-BF96-399546BFE645}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetLib\ASSBIN">
+      <UniqueIdentifier>{AB353AFC-C7DA-385C-BA55-088A6787AB34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetLib\ASSJSON">
+      <UniqueIdentifier>{73C78E12-0875-3DF7-A638-87A958734693}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetLib\ASSXML">
+      <UniqueIdentifier>{699843F5-0834-350C-AD7F-B0D7C481019C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetLib\B3D">
+      <UniqueIdentifier>{9C3805C3-8E03-3080-B9D0-3F9AE124DD9F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetLib\BLEND">
+      <UniqueIdentifier>{E5B72A0E-69B3-3FFF-9681-094DFBEBB97B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetLib\BVH">
+      <UniqueIdentifier>{2F8545C0-79DC-3622-BA10-20662DAA56F1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetLib\COB">
+      <UniqueIdentifier>{C3D5A907-C189-31ED-B1B7-6461A85757B8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetLib\COLLADA">
+      <UniqueIdentifier>{5B573FD4-8EE8-3437-9740-144E491F67BB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetLib\CSM">
+      <UniqueIdentifier>{3185CBE0-656F-3757-B949-F40E850E077B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetLib\DXF">
+      <UniqueIdentifier>{F64F93A6-D31E-3D56-AA40-B86DD0376832}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetLib\FBX">
+      <UniqueIdentifier>{F2692489-B3AE-3B57-B2CD-70ABE39F4B20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetLib\GLTF">
+      <UniqueIdentifier>{51A41063-7D51-3755-9520-4065A8875308}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetLib\HMP">
+      <UniqueIdentifier>{1425715E-D027-32AF-B656-35D57A19E664}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetLib\IFC">
+      <UniqueIdentifier>{3824C043-7B46-38F3-9F64-66DAD194ACA3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetLib\IQM">
+      <UniqueIdentifier>{C12667C2-E54D-363E-9A5E-46A746F7431D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetLib\IRR">
+      <UniqueIdentifier>{EC9B1426-B5BA-3CA3-8B56-A801B1D3E6BE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetLib\IRRMESH">
+      <UniqueIdentifier>{5612AB95-06A6-35AA-ABB3-985C81B11483}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetLib\LWO">
+      <UniqueIdentifier>{D41902CB-CF6F-3244-88D1-D311C0D7BBEB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetLib\LWS">
+      <UniqueIdentifier>{817E8C4D-A01B-3F1B-99DC-7BC1EB475049}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetLib\MD2">
+      <UniqueIdentifier>{DB046349-FC75-3B72-B149-CDF6992596E1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetLib\MD3">
+      <UniqueIdentifier>{01E6EE55-F2CD-3C56-B678-A388D8D5587A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetLib\MD5">
+      <UniqueIdentifier>{CA1FF5C4-58D5-397F-8C36-9050A0125043}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetLib\MDC">
+      <UniqueIdentifier>{30257899-FFE1-3BA8-A7FF-1A07E5415F41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetLib\MDL">
+      <UniqueIdentifier>{5373ED40-BE26-38D1-B1CC-A6FC9FB763E5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetLib\MMD">
+      <UniqueIdentifier>{FB0E84CB-F83D-378A-AD84-419F1F015AA8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetLib\MS3D">
+      <UniqueIdentifier>{F6B9CB2D-0AE0-3E29-834D-908B6274BC40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetLib\NDO">
+      <UniqueIdentifier>{4CD6C765-2069-3753-9B74-FD05029FA53D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetLib\NFF">
+      <UniqueIdentifier>{0F755B72-4B65-3FBE-9300-03234B86B6EE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetLib\OBJ">
+      <UniqueIdentifier>{93351F46-A0E9-3B5B-8CCF-0401022122CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetLib\OFF">
+      <UniqueIdentifier>{B198CACF-A6BD-3496-9578-69B888EFB774}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetLib\OGRE">
+      <UniqueIdentifier>{F790B542-C515-3EB7-AB0E-CEBDEA0F5F67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetLib\OPENGEX">
+      <UniqueIdentifier>{E338BA9E-A5C1-34B9-85C1-6AE17A5B12CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetLib\PBRT">
+      <UniqueIdentifier>{9043C046-A87B-3402-9761-355EBDE80AFD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetLib\PLY">
+      <UniqueIdentifier>{9E2A3B47-3D1E-3626-901D-A836A6806681}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetLib\Q3BSP">
+      <UniqueIdentifier>{2B53BE95-9C9E-3CD8-98EB-ACD3B91A8641}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetLib\Q3D">
+      <UniqueIdentifier>{5F473782-382F-3DF2-92D1-977FD3757EF2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetLib\RAW">
+      <UniqueIdentifier>{6DF184C6-B79A-3DCD-AA16-D14766CC9868}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetLib\SIB">
+      <UniqueIdentifier>{0443C307-89CB-39B2-992A-0429FFD4F24C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetLib\SMD">
+      <UniqueIdentifier>{C047CD57-5D74-36CA-956A-ABB275626717}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetLib\STEP">
+      <UniqueIdentifier>{F02826D7-A0EE-31DA-89D0-5D4229A2BD0A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetLib\STL">
+      <UniqueIdentifier>{69A7712A-9541-3A76-8B30-474497ED0D32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetLib\TERRAGEN">
+      <UniqueIdentifier>{178ED5C9-A639-3B25-A17F-1632486D1878}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetLib\X">
+      <UniqueIdentifier>{217FFF62-C580-3285-944A-7C48D6DEE02F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetLib\X3D">
+      <UniqueIdentifier>{E6942459-56EA-375C-B3E4-0B1D6D06299D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetLib\XGL">
+      <UniqueIdentifier>{48C6535B-0DB0-35FA-9E23-1FFD384BCACF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CApi">
+      <UniqueIdentifier>{BEF015EF-271B-31C6-9CCC-C9C58750BE73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{92C5FC89-D5E5-3017-BB56-BAF78CF3F387}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Compiler">
+      <UniqueIdentifier>{CBCD7DFE-23CB-3157-AAF8-AD363FF39636}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contrib">
+      <UniqueIdentifier>{A7C296F9-7DE4-3287-A1BD-F8EF45024D89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contrib\Clipper">
+      <UniqueIdentifier>{6D482D47-7C64-326F-855D-395F7791071D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contrib\Poly2Tri">
+      <UniqueIdentifier>{44ED413B-9748-36D8-9690-9AB82B58EDD3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contrib\Pugixml">
+      <UniqueIdentifier>{D90F2115-7F26-3527-9402-11EDA4D3F722}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contrib\open3dgc">
+      <UniqueIdentifier>{D7197AA7-9048-355B-A49F-6168C401BFC0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contrib\openddl_parser">
+      <UniqueIdentifier>{3B11CB97-2C36-35FA-BBBB-729718B97C79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contrib\stb">
+      <UniqueIdentifier>{C9E20C31-ECC0-3E92-BF89-540879BD9D3F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contrib\unzip">
+      <UniqueIdentifier>{2977C9F1-F911-3921-B28C-C85640A4110F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exporter">
+      <UniqueIdentifier>{B21524D3-3452-3E44-8970-998C8F24D133}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Geometry">
+      <UniqueIdentifier>{018ACD82-4300-3C62-B46D-CFD4823A82AE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{23F67B6A-2BC3-31AC-841C-34C7E1238ED8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logging">
+      <UniqueIdentifier>{CE3BDDD2-1A5C-30BA-9E8D-B78EA3649034}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MaterialSystem">
+      <UniqueIdentifier>{B668E0A5-86E5-3F24-A880-7C16E636805D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PostProcessing">
+      <UniqueIdentifier>{BE1F4143-94DE-33E7-841B-F8843E14488F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="STEPParser">
+      <UniqueIdentifier>{DEBCFC3B-8D5D-327B-B2D9-9936E542AB5E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{E511EB15-B142-3DFC-99D5-A5BAF878E6C0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="glTFCommon">
+      <UniqueIdentifier>{81718BC1-0ADC-34B4-B846-82C25CC04503}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{825307A9-E668-3828-946C-78829C9C8F20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\assimp">
+      <UniqueIdentifier>{969C514A-2B6C-345A-B755-72D3D5BF4499}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ziplib">
+      <UniqueIdentifier>{EA4FE129-B3BD-35AD-BB0D-BD57AC64A7DD}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

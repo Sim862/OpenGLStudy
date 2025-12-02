@@ -1,0 +1,11 @@
+{
+	"InstallScripts" : 
+	[
+		"E:/git/OpenGLStudy/opengl_work/external/assimp-5.2.5/build/cmake_install.cmake",
+		"E:/git/OpenGLStudy/opengl_work/external/assimp-5.2.5/build/contrib/zlib/cmake_install.cmake",
+		"E:/git/OpenGLStudy/opengl_work/external/assimp-5.2.5/build/code/cmake_install.cmake",
+		"E:/git/OpenGLStudy/opengl_work/external/assimp-5.2.5/build/test/cmake_install.cmake",
+		"E:/git/OpenGLStudy/opengl_work/external/assimp-5.2.5/build/test/headercheck/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
