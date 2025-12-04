@@ -11,6 +11,7 @@
 
 #include "shader_m.h"	// 셰이더 유틸리티 클래스
 #include "camera.h"
+#include "model.h"
 
 // [추가] ImGui 헤더
 #include <imgui.h>
@@ -432,7 +433,8 @@ void drawScene(Shader& lightingShader,
 	unsigned int cubeVAO,
 	unsigned int lightVAO,
 	unsigned int diffuseMap,
-	unsigned int specularMap)
+	unsigned int specularMap,
+	Model* model)
 {
 	// 텍스처 바인딩
 	glActiveTexture(GL_TEXTURE0);
@@ -479,6 +481,20 @@ void drawScene(Shader& lightingShader,
 		lightingShader.setMat4("model", model);
 
 		glDrawArrays(GL_TRIANGLES, 0, 36);
+	}
+
+	// === 새로 추가: Assimp로 로딩한 3D 모델 그리기 ===
+	if (model)
+	{
+		// 모델 변환 행렬 설정 (위치/스케일 조정용임)
+		glm::mat4 modelMat = glm::mat4(1.0f);
+		modelMat = glm::translate(modelMat, glm::vec3(0.0f, -1.75f, 0.0f));
+		modelMat = glm::scale(modelMat, glm::vec3(0.2f)); // 모델 크기에 맞게 적당히 조절함
+
+		lightingShader.setMat4("model", modelMat);
+
+		// 조명/뷰 설정은 위에서 이미 해 두었으므로 그대로 사용함
+		model->Draw(lightingShader);
 	}
 
 	// ===== 광원 큐브 렌더링 =====
@@ -529,13 +545,16 @@ int main()
 	unsigned int diffuseMap = loadTexture2D("assets/textures/container2.png");
 	unsigned int specularMap = loadTexture2D("assets/textures/container2_specular.png");
 
+	if (diffuseMap == 0 || specularMap == 0) {
+		std::cerr << "Texture load failed. Check assets paths. \n";
+	}
 
 	// 샘플러 유닛 연결(한 번만)
 	lightCubeShader.use();;
 	// [추가] 조명 셰이더용 재질 텍스처 유닛 연결
 	lightCubeShader.setInt("material.diffuse", 0);
 	lightCubeShader.setInt("material.specular", 1);
-
+	Model nanosuit("assets/models/nanosuit/name.obj");
 
 	while (!glfwWindowShouldClose(window))
 	{
