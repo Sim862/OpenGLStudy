@@ -511,6 +511,35 @@ void drawScene(Shader& lightingShader,
 	glDrawArrays(GL_TRIANGLES, 0, 36);
 }
 
+Assimp::Importer importer;
+void Anim() {
+	const aiScene* scene = importer.ReadFile("assets/models/human.fbx", aiProcess_Triangulate);
+	if (!scene || !scene->mRootNode) {
+		std::cout << "Failed to load animation: " << importer.GetErrorString() << std::endl;
+		return;
+	}
+
+	// 애니메이션 데이터 확인
+	std::cout << "Animations: " << scene->mNumAnimations << std::endl;
+
+	if (scene->mNumAnimations > 0) {
+		aiAnimation* anim = scene->mAnimations[0];
+		std::cout << "Name: " << anim->mName.C_Str() << std::endl;
+		std::cout << "Duration: " << anim->mDuration << std::endl;
+		std::cout << "Ticks/sec: " << anim->mTicksPerSecond << std::endl;
+		std::cout << "Channels: " << anim->mNumChannels << std::endl;  // 본 개수
+
+		// 각 본의 키프레임 정보
+		for (int i = 0; i < anim->mNumChannels; i++) {
+			aiNodeAnim* channel = anim->mChannels[i];
+			std::cout << "Bone: " << channel->mNodeName.C_Str() << std::endl;
+			std::cout << "  Position keys: " << channel->mNumPositionKeys << std::endl;
+			std::cout << "  Rotation keys: " << channel->mNumRotationKeys << std::endl;
+			std::cout << "  Scale keys: " << channel->mNumScalingKeys << std::endl;
+		}
+	}
+}
+
 int main()
 {
 	// 1. GLFW + Window 생성
@@ -555,7 +584,7 @@ int main()
 	lightCubeShader.setInt("material.diffuse", 0);
 	lightCubeShader.setInt("material.specular", 1);
 	Model model("assets/models/human.fbx");
-
+	Anim();
 	while (!glfwWindowShouldClose(window))
 	{
 		// 뷰포트 해상도 측정과 설정 (창 크기 변경 대비)
