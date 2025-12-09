@@ -17,7 +17,7 @@ set(ASSIMP_LIB_DIR "${ASSIMP_DIR}/build/lib/Release")
 add_subdirectory(${GLFW_DIR} ${CMAKE_BINARY_DIR}/glfw_build)
 
 # GLAD 정적 라이브러리
-add_library(glad ${GLAD_DIR}/src/glad.c) 
+add_library(glad ${GLAD_DIR}/src/glad.c ) 
 target_include_directories(glad PUBLIC ${GLAD_DIR}/include)
 
 include_directories(${ASSIMP_DIR}/include)
@@ -35,7 +35,7 @@ add_library(imgui_lib STATIC
     ${IMGUI_DIR}/imgui_demo.cpp 
     ${IMGUI_DIR}/backends/imgui_impl_glfw.cpp
     ${IMGUI_DIR}/backends/imgui_impl_opengl3.cpp
- )
+  )
 # ImGui 라이브러리가 자신의 헤더 및 백엔드 헤더를 찾도록 설정
 target_include_directories(imgui_lib PUBLIC
     ${IMGUI_DIR}
@@ -46,12 +46,12 @@ target_link_libraries(imgui_lib PUBLIC glfw glad)
 # ### ImGui 정적 라이브러리 끝 ###
 
 # ── stb_image 구현 OBJECT 라이브러리 ──
-add_library(stb_image_obj OBJECT src/stb_image_impl.cpp )
+add_library(stb_image_obj OBJECT src/stb_image_impl.cpp  )
 target_include_directories(stb_image_obj PUBLIC ${CMAKE_SOURCE_DIR}/include)
 
 
 # 실행 파일
-add_executable(${PROJECT_NAME} src/main.cpp )
+add_executable(${PROJECT_NAME} src/main.cpp  )
 
 # 포함 경로
 target_include_directories(${PROJECT_NAME} PRIVATE

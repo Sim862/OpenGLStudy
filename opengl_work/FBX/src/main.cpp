@@ -13,6 +13,7 @@
 #include "camera.h"
 #include "model.h"
 
+
 // [추가] ImGui 헤더
 #include <imgui.h>
 #include <imgui_impl_glfw.h>
@@ -86,6 +87,22 @@ const glm::vec3 gCubePositions[10] = {
 };
 
 const unsigned int gCubeCount = sizeof(gCubePositions) / sizeof(glm::vec3);
+
+
+// ------------------------------
+
+const aiScene* gAnimScene = nullptr;
+const aiAnimation* gAnim = nullptr;
+float gAnimDuration = 0.0f;
+float gAnimTicksPerSecond = 30.0f;
+
+glm::mat4 gGlobalInverse;  // 전역 변수 선언
+std::map<std::string, BoneInfo> gBoneInfoMap;
+std::vector<glm::mat4> gFinalBones; // size = m_BoneCount 이상
+
+
+
+// -----------------------------
 
 // 프레임버퍼 크기 변경 콜백: 창이 리사이즈될 때 실제 렌더링 영역(뷰포트)도 맞춰줌
 void framebuffer_size_callback(GLFWwindow* window, int width, int height) {
@@ -427,6 +444,151 @@ void buildImGuiUI()
 	ImGui::End();
 }
 
+// ----------------------------------------------
+
+glm::mat4 AiToGlm(const aiMatrix4x4& m)
+{
+	glm::mat4 r;
+	r[0][0] = m.a1; r[1][0] = m.a2; r[2][0] = m.a3; r[3][0] = m.a4;
+	r[0][1] = m.b1; r[1][1] = m.b2; r[2][1] = m.b3; r[3][1] = m.b4;
+	r[0][2] = m.c1; r[1][2] = m.c2; r[2][2] = m.c3; r[3][2] = m.c4;
+	r[0][3] = m.d1; r[1][3] = m.d2; r[2][3] = m.d3; r[3][3] = m.d4;
+	return r;
+}
+
+const aiNodeAnim* FindChannel(const aiAnimation* animation, const std::string& name)
+{
+	for (unsigned int i = 0; i < animation->mNumChannels; i++) {
+		if (name == animation->mChannels[i]->mNodeName.C_Str())
+			return animation->mChannels[i];
+	}
+	return nullptr;
+}
+
+glm::vec3 InterpolatePosition(const aiNodeAnim* channel, float time)
+{
+	if (channel->mNumPositionKeys == 1) {
+		auto& v = channel->mPositionKeys[0].mValue;
+		return glm::vec3(v.x, v.y, v.z);
+	}
+
+	unsigned int index = 0;
+	for (unsigned int i = 0; i < channel->mNumPositionKeys - 1; i++) {
+		if (time < (float)channel->mPositionKeys[i + 1].mTime) {
+			index = i;
+			break;
+		}
+	}
+	unsigned int nextIndex = index + 1;
+
+	float t1 = (float)channel->mPositionKeys[index].mTime;
+	float t2 = (float)channel->mPositionKeys[nextIndex].mTime;
+	float factor = (time - t1) / (t2 - t1);
+
+	auto& v1 = channel->mPositionKeys[index].mValue;
+	auto& v2 = channel->mPositionKeys[nextIndex].mValue;
+	glm::vec3 p1(v1.x, v1.y, v1.z);
+	glm::vec3 p2(v2.x, v2.y, v2.z);
+	return glm::mix(p1, p2, factor);
+}
+
+glm::quat InterpolateRotation(const aiNodeAnim* channel, float time)
+{
+	if (channel->mNumRotationKeys == 1) {
+		auto& q = channel->mRotationKeys[0].mValue;
+		return glm::quat(q.w, q.x, q.y, q.z);
+	}
+
+	unsigned int index = 0;
+	for (unsigned int i = 0; i < channel->mNumRotationKeys - 1; i++) {
+		if (time < (float)channel->mRotationKeys[i + 1].mTime) {
+			index = i;
+			break;
+		}
+	}
+	unsigned int nextIndex = index + 1;
+
+	float t1 = (float)channel->mRotationKeys[index].mTime;
+	float t2 = (float)channel->mRotationKeys[nextIndex].mTime;
+	float factor = (time - t1) / (t2 - t1);
+
+	auto& q1 = channel->mRotationKeys[index].mValue;
+	auto& q2 = channel->mRotationKeys[nextIndex].mValue;
+	glm::quat a(q1.w, q1.x, q1.y, q1.z);
+	glm::quat b(q2.w, q2.x, q2.y, q2.z);
+	return glm::slerp(a, b, factor);
+}
+
+glm::vec3 InterpolateScale(const aiNodeAnim* channel, float time)
+{
+	if (channel->mNumScalingKeys == 1) {
+		auto& v = channel->mScalingKeys[0].mValue;
+		return glm::vec3(v.x, v.y, v.z);
+	}
+
+	unsigned int index = 0;
+	for (unsigned int i = 0; i < channel->mNumScalingKeys - 1; i++) {
+		if (time < (float)channel->mScalingKeys[i + 1].mTime) {
+			index = i;
+			break;
+		}
+	}
+	unsigned int nextIndex = index + 1;
+
+	float t1 = (float)channel->mScalingKeys[index].mTime;
+	float t2 = (float)channel->mScalingKeys[nextIndex].mTime;
+	float factor = (time - t1) / (t2 - t1);
+
+	auto& v1 = channel->mScalingKeys[index].mValue;
+	auto& v2 = channel->mScalingKeys[nextIndex].mValue;
+	glm::vec3 s1(v1.x, v1.y, v1.z);
+	glm::vec3 s2(v2.x, v2.y, v2.z);
+	return glm::mix(s1, s2, factor);
+}
+void CalcAnimationAtTime(const aiNode* node,
+	const glm::mat4& parentTransform,
+	float timeInTicks)
+{
+	std::string nodeName = node->mName.C_Str();
+
+	// 1) 기본 노드 변환 (FBX에 저장된 트랜스폼)
+	glm::mat4 nodeTransform = AiToGlm(node->mTransformation);
+
+	// 2) 애니메이션 채널이 있으면, 보간된 변환으로 덮어쓰기
+	if (gAnim) {
+		if (const aiNodeAnim* channel = FindChannel(gAnim, nodeName)) {
+			glm::vec3 pos = InterpolatePosition(channel, timeInTicks);
+			glm::quat rot = InterpolateRotation(channel, timeInTicks);
+			glm::vec3 scale = InterpolateScale(channel, timeInTicks);
+
+			glm::mat4 T = glm::translate(glm::mat4(1.0f), pos);
+			glm::mat4 R = glm::mat4(rot);
+			glm::mat4 S = glm::scale(glm::mat4(1.0f), scale);
+			nodeTransform = T * R * S;
+		}
+	}
+
+	glm::mat4 globalTransform = parentTransform * nodeTransform;
+
+	// 3) 이 노드가 본이라면 최종 행렬 계산
+	auto it = gBoneInfoMap.find(nodeName);
+	if (it != gBoneInfoMap.end()) {
+		int       boneID = it->second.id;
+		glm::mat4 offset = it->second.offset;
+		gFinalBones[boneID] = gGlobalInverse * globalTransform * offset;
+
+		std::cout << "bone found: " << nodeName << std::endl;
+	}
+
+	// 4) 자식 노드 재귀
+	for (unsigned int i = 0; i < node->mNumChildren; i++) {
+		CalcAnimationAtTime(node->mChildren[i], globalTransform, timeInTicks);
+	}
+}
+
+
+// -------------------------------------------------
+
 // 씬 렌더링 함수 (큐브 + 광원)
 void drawScene(Shader& lightingShader,
 	Shader& lightCubeShader,
@@ -492,7 +654,11 @@ void drawScene(Shader& lightingShader,
 		modelMat = glm::scale(modelMat, glm::vec3(0.2f)); // 모델 크기에 맞게 적당히 조절함
 
 		lightingShader.setMat4("model", modelMat);
-
+		for (int i = 0; i < (int)gFinalBones.size(); ++i)
+		{
+			lightingShader.setMat4("finalBonesMatrices[" + std::to_string(i) + "]",
+				gFinalBones[i]);
+		}
 		// 조명/뷰 설정은 위에서 이미 해 두었으므로 그대로 사용함
 		model->Draw(lightingShader);
 	}
@@ -510,6 +676,37 @@ void drawScene(Shader& lightingShader,
 	glBindVertexArray(lightVAO);
 	glDrawArrays(GL_TRIANGLES, 0, 36);
 }
+
+Assimp::Importer importer;
+void Anim() {
+	const aiScene* scene = importer.ReadFile("assets/anim/Capoeira.fbx", aiProcess_Triangulate);
+	if (!scene || !scene->mRootNode) {
+		std::cout << "Failed to load animation: " << importer.GetErrorString() << std::endl;
+		return;
+	}
+
+	// 애니메이션 데이터 확인
+	std::cout << "Animations: " << scene->mNumAnimations << std::endl;
+
+	if (scene->mNumAnimations > 0) {
+		aiAnimation* anim = scene->mAnimations[0];
+		std::cout << "Name: " << anim->mName.C_Str() << std::endl;
+		std::cout << "Duration: " << anim->mDuration << std::endl;
+		std::cout << "Ticks/sec: " << anim->mTicksPerSecond << std::endl;
+		std::cout << "Channels: " << anim->mNumChannels << std::endl;  // 본 개수
+
+		// 각 본의 키프레임 정보
+		for (int i = 0; i < anim->mNumChannels; i++) {
+			aiNodeAnim* channel = anim->mChannels[i];
+			std::cout << "Bone: " << channel->mNodeName.C_Str() << std::endl;
+			std::cout << "  Position keys: " << channel->mNumPositionKeys << std::endl;
+			std::cout << "  Rotation keys: " << channel->mNumRotationKeys << std::endl;
+			std::cout << "  Scale keys: " << channel->mNumScalingKeys << std::endl;
+		}
+	}
+}
+
+
 
 int main()
 {
@@ -533,6 +730,7 @@ int main()
 	// 5. 쉐이더 생성
 	Shader lightingShader("shaders/basic_lighting_tex.vert", "shaders/basic_lighting_tex.frag");
 	Shader lightCubeShader("shaders/light_cube.vert", "shaders/light_cube.frag");
+	Shader anim("shaders/anim.vert", "shaders/anim.frag");
 
 	// 6. 깊이버퍼 사용
 	glEnable(GL_DEPTH_TEST);
@@ -554,7 +752,40 @@ int main()
 	// [추가] 조명 셰이더용 재질 텍스처 유닛 연결
 	lightCubeShader.setInt("material.diffuse", 0);
 	lightCubeShader.setInt("material.specular", 1);
-	Model model("assets/models/human.fbx");
+	Model human("assets/anims/Capoeira.fbx");
+	for (auto& kv : human.m_BoneInfoMap) {
+		std::cout << "  [" << kv.first << "] id=" << kv.second.id << std::endl;
+	}
+
+	// 모델에서 본 정보 받아오기 (getter 만들어두었다고 가정)
+	auto& boneMap = human.m_BoneInfoMap;       // 지금은 public 아니면 getter로
+	auto  boneCount = human.m_BoneCount;
+	auto  globalInv = human.m_GlobalInverseTransform;
+
+	// 전역 변수 세팅
+	gFinalBones.assign(boneCount, glm::mat4(1.0f));
+	gGlobalInverse = globalInv;          // 전역으로 뺐다면
+
+	// 애니메이션 로드
+	Assimp::Importer animImporter;
+	gAnimScene = animImporter.ReadFile("assets/anims/Capoeira.fbx", aiProcess_Triangulate);
+	if (!gAnimScene || gAnimScene->mNumAnimations == 0) {
+		std::cout << "No animation in FBX\n";
+	}
+	else {
+		gBoneInfoMap = human.m_BoneInfoMap;
+		gGlobalInverse = human.m_GlobalInverseTransform;
+		gFinalBones.assign(human.m_BoneCount, glm::mat4(1.0f));
+
+		gAnim = gAnimScene->mAnimations[0];
+		gAnimDuration = (float)gAnim->mDuration;
+		gAnimTicksPerSecond = (float)(gAnim->mTicksPerSecond != 0.0 ?
+			gAnim->mTicksPerSecond : 30.0f);
+		std::cout << "Anim duration: " << gAnimDuration
+			<< ", tps: " << gAnimTicksPerSecond << std::endl;
+	}
+	static float animTime = 0.0f;
+
 
 	while (!glfwWindowShouldClose(window))
 	{
@@ -584,10 +815,20 @@ int main()
 		glClearColor(0.07f, 0.08f, 0.12f, 1.0f);
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
+		if (gAnim) {
+			animTime += gAnimTicksPerSecond * deltaTime;
+			if (animTime > gAnimDuration)
+				animTime = fmod(animTime, gAnimDuration);
+
+			// 본 행렬 채우기
+			CalcAnimationAtTime(gAnimScene->mRootNode, glm::mat4(1.0f), animTime);
+		}
+
+
 		// 3D 씬(큐브 + 광원) 렌더링
-		drawScene(lightingShader, lightCubeShader,
+		drawScene(anim, lightCubeShader,
 			cubeVAO, lightVAO,
-			diffuseMap, specularMap, &model);
+			diffuseMap, specularMap, &human);
 
 
 		// ImGui 렌더링

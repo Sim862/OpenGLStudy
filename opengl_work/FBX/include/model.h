@@ -22,13 +22,34 @@
 #include <vector>
 using namespace std;
 
+struct BoneInfo {
+    int id;
+    glm::mat4 offset;
+};
+
+
 unsigned int TextureFromFile(const char* path, const string& directory, bool gamma = false);
 unsigned int TextureFromMemory(const aiTexture* texture, bool gamma = false);
 string ExtractFilename(const string& path);
 
+glm::mat4 ConvertMatrix(const aiMatrix4x4& m) {
+    glm::mat4 r;
+    r[0][0] = m.a1; r[1][0] = m.a2; r[2][0] = m.a3; r[3][0] = m.a4;
+    r[0][1] = m.b1; r[1][1] = m.b2; r[2][1] = m.b3; r[3][1] = m.b4;
+    r[0][2] = m.c1; r[1][2] = m.c2; r[2][2] = m.c3; r[3][2] = m.c4;
+    r[0][3] = m.d1; r[1][3] = m.d2; r[2][3] = m.d3; r[3][3] = m.d4;
+    return r;
+}
+
+
 class Model
 {
 public:
+    std::map<std::string, BoneInfo> m_BoneInfoMap;
+    int m_BoneCount = 0;
+    glm::mat4 m_GlobalInverseTransform;
+
+
     vector<Texture> textures_loaded;
     vector<Mesh>    meshes;
     string directory;
@@ -47,6 +68,52 @@ public:
     }
 
 private:
+    //-------------------------
+    void SetVertexBoneData(Vertex& vertex, int boneID, float weight)
+    {
+        for (int i = 0; i < MAX_BONE_INFLUENCE; i++) {
+            if (vertex.m_Weights[i] == 0.0f) {
+                vertex.m_BoneIDs[i] = boneID;
+                vertex.m_Weights[i] = weight;
+                return;
+            }
+        }
+        // 이미 4개 꽉 찬 경우는 일단 무시 (나중에 정교하게 바꿀 수 있음)
+    }
+
+    void ExtractBoneWeightsForMesh(aiMesh* mesh, std::vector<Vertex>& vertices)
+    {
+        for (unsigned int boneIndex = 0; boneIndex < mesh->mNumBones; boneIndex++) {
+            aiBone* aiBonePtr = mesh->mBones[boneIndex];
+            std::string boneName = aiBonePtr->mName.C_Str();
+
+            int boneID = -1;
+            auto it = m_BoneInfoMap.find(boneName);
+            if (it == m_BoneInfoMap.end()) {
+                BoneInfo info;
+                info.id = m_BoneCount;
+                info.offset = ConvertMatrix(aiBonePtr->mOffsetMatrix);
+                m_BoneInfoMap[boneName] = info;
+                boneID = m_BoneCount;
+                m_BoneCount++;
+            }
+            else {
+                boneID = it->second.id;
+            }
+
+            // 이 본이 영향을 주는 정점들에 가중치 기록
+            for (unsigned int weightIndex = 0; weightIndex < aiBonePtr->mNumWeights; weightIndex++) {
+                int vertexID = aiBonePtr->mWeights[weightIndex].mVertexId;
+                float weight = aiBonePtr->mWeights[weightIndex].mWeight;
+                SetVertexBoneData(vertices[vertexID], boneID, weight);
+            }
+        }
+
+        std::cout << "Mesh bones: " << mesh->mNumBones
+            << ", total boneCount: " << m_BoneCount << std::endl;
+    }
+
+    //-------------------------------
     Assimp::Importer importer;  // 클래스 멤버로 이동 (scene 수명 유지)
 
     void loadModel(string const& path)
@@ -63,6 +130,9 @@ private:
             cout << "ERROR::ASSIMP:: " << importer.GetErrorString() << endl;
             return;
         }
+
+        m_GlobalInverseTransform =
+            glm::inverse(ConvertMatrix(scene->mRootNode->mTransformation));
 
         directory = path.substr(0, path.find_last_of('/'));
 
@@ -136,6 +206,22 @@ private:
 
             vertices.push_back(vertex);
         }
+        //-----------------------------------------
+        // 
+            // 본 ID/가중치 초기화
+        for (unsigned int i = 0; i < mesh->mNumVertices; i++) {
+            for (int j = 0; j < MAX_BONE_INFLUENCE; j++) {
+                vertices[i].m_BoneIDs[j] = 0;
+                vertices[i].m_Weights[j] = 0.0f;
+            }
+        }
+
+        // 새로 추가: 본 데이터 추출
+        ExtractBoneWeightsForMesh(mesh, vertices);
+
+        //-----------------------------------------
+
+
 
         for (unsigned int i = 0; i < mesh->mNumFaces; i++)
         {
