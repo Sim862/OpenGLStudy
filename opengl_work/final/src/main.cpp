@@ -180,7 +180,7 @@ void processInput(GLFWwindow* window)
 	if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
 		glfwSetWindowShouldClose(window, true);
 
-	return;
+	//return;
 
 	// W (앞으로): cameraPos += (정면 방향 * 속도)
 	if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
@@ -661,7 +661,7 @@ void CalcAnimationAtTime(const aiNode* node,
 		glm::mat4 offset = it->second.offset;
 		gFinalBones[boneID] = gGlobalInverse * globalTransform * offset;
 
-		std::cout << "bone found: " << nodeName << std::endl;
+		//std::cout << "bone found: " << nodeName << std::endl;
 	}
 
 	// 4) 자식 노드 재귀
@@ -677,15 +677,17 @@ void CalcAnimationAtTime(const aiNode* node,
 
 void renderSceneGeometry(Shader& shader, unsigned int cubeVAO)
 {
+	return;
 	// 큐브 그리기
 	glBindVertexArray(cubeVAO);
 
-	for (unsigned int i = 0; i < gCubeCount; i++)
+	for (unsigned int i = 0; i < 1; i++)
 	{
 		glm::mat4 model = glm::mat4(1.0f);
-		model = glm::translate(model, gCubePositions[i]);
+		model = glm::translate(model, glm::vec3(0.0f, -1.75f, 0.0f));
 		float angle = 20.0f * i;
 		model = glm::rotate(model, glm::radians(angle), glm::vec3(1.0f, 0.3f, 0.5f));
+		model = glm::scale(model, glm::vec3(5.0f, 0.1f, 5.0f));
 		shader.setMat4("model", model);
 
 		glDrawArrays(GL_TRIANGLES, 0, 36);
@@ -695,8 +697,6 @@ void renderSceneGeometry(Shader& shader, unsigned int cubeVAO)
 
 void renderSceneGeometry_Anim(Shader& shader, Model* model)
 {
-
-	// === 새로 추가: Assimp로 로딩한 3D 모델 그리기 ===
 	if (model)
 	{
 		shader.setMat4("model", modelMat);
@@ -705,7 +705,6 @@ void renderSceneGeometry_Anim(Shader& shader, Model* model)
 			shader.setMat4("finalBonesMatrices[" + std::to_string(i) + "]",
 				gFinalBones[i]);
 		}
-		// 조명/뷰 설정은 위에서 이미 해 두었으므로 그대로 사용함
 		model->Draw(shader);
 	}
 }
@@ -844,8 +843,9 @@ void playerSetting() {
 	// 모델 변환 행렬 설정 (위치/스케일 조정용임)
 	modelMat = glm::mat4(1.0f);
 	modelMat = glm::translate(modelMat, glm::vec3(0.0f, -1.75f, 0.0f));
-	modelMat = glm::scale(modelMat, glm::vec3(0.01f)); // 모델 크기에 맞게 적당히 조절함
-
+	modelMat = glm::scale(modelMat, glm::vec3(0.05f)); // 모델 크기에 맞게 적당히 조절함
+	
+	camera.Position = glm::vec3(0.0f, 0.0f, 10.0f);
 }
 
 int main()
@@ -894,18 +894,10 @@ int main()
 	lightCubeShader.setInt("material.diffuse", 0);
 	lightCubeShader.setInt("material.specular", 1);
 	Model human("assets/anims/Capoeira.fbx");
-	for (auto& kv : human.m_BoneInfoMap) {
-		std::cout << "  [" << kv.first << "] id=" << kv.second.id << std::endl;
-	}
 
-	// 모델에서 본 정보 받아오기 (getter 만들어두었다고 가정)
-	auto& boneMap = human.m_BoneInfoMap;       // 지금은 public 아니면 getter로
-	auto  boneCount = human.m_BoneCount;
-	auto  globalInv = human.m_GlobalInverseTransform;
-
-	// 전역 변수 세팅
-	gFinalBones.assign(boneCount, glm::mat4(1.0f));
-	gGlobalInverse = globalInv;          // 전역으로 뺐다면
+	//for (auto& kv : human.m_BoneInfoMap) {
+	//	std::cout << "  [" << kv.first << "] id=" << kv.second.id << std::endl;
+	//}
 
 	// 애니메이션 로드
 	Assimp::Importer animImporter;
@@ -915,20 +907,19 @@ int main()
 	}
 	else {
 		gBoneInfoMap = human.m_BoneInfoMap;
-		gGlobalInverse = human.m_GlobalInverseTransform;
+		gGlobalInverse = human.m_GlobalInverseTransform; // 모델 버텍스의 역행렬 
 		gFinalBones.assign(human.m_BoneCount, glm::mat4(1.0f));
 
 		gAnim = gAnimScene->mAnimations[0];
 		gAnimDuration = (float)gAnim->mDuration;
 		gAnimTicksPerSecond = (float)(gAnim->mTicksPerSecond != 0.0 ?
-			gAnim->mTicksPerSecond : 30.0f);
+			gAnim->mTicksPerSecond : 30.0f); // 애니메이션의 1초당 몇 틱인지
 		std::cout << "Anim duration: " << gAnimDuration
 			<< ", tps: " << gAnimTicksPerSecond << std::endl;
 	}
-	static float animTime = 0.0f;
+	float animTime = 0.0f;
 
 	playerSetting();
-
 	while (!glfwWindowShouldClose(window))
 	{
 		// 뷰포트 해상도 측정과 설정 (창 크기 변경 대비)
@@ -978,6 +969,7 @@ int main()
 		renderSceneGeometry_Anim(depthShader, &human);
 
 		glBindFramebuffer(GL_FRAMEBUFFER, 0);
+
 
 
 		// 화면/깊이버퍼 클리어

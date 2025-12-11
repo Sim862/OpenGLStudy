@@ -96,10 +96,12 @@ private:
                 m_BoneInfoMap[boneName] = info;
                 boneID = m_BoneCount;
                 m_BoneCount++;
+
             }
             else {
                 boneID = it->second.id;
             }
+
 
             // 이 본이 영향을 주는 정점들에 가중치 기록
             for (unsigned int weightIndex = 0; weightIndex < aiBonePtr->mNumWeights; weightIndex++) {
@@ -119,11 +121,13 @@ private:
     void loadModel(string const& path)
     {
         scene = importer.ReadFile(path,
-            aiProcess_Triangulate |
-            aiProcess_GenSmoothNormals |
-            //aiProcess_FlipUVs |
-            aiProcess_CalcTangentSpace);
-        
+            aiProcess_Triangulate 
+            |aiProcess_GenSmoothNormals
+        //  |aiProcess_FlipUVs
+            |aiProcess_CalcTangentSpace
+        );
+
+
 
         if (!scene || scene->mFlags & AI_SCENE_FLAGS_INCOMPLETE || !scene->mRootNode)
         {
@@ -204,16 +208,12 @@ private:
             else
                 vertex.TexCoords = glm::vec2(0.0f, 0.0f);
 
-            vertices.push_back(vertex);
-        }
-        //-----------------------------------------
-        // 
-            // 본 ID/가중치 초기화
-        for (unsigned int i = 0; i < mesh->mNumVertices; i++) {
+            // 본 ID/가충치 초기화
             for (int j = 0; j < MAX_BONE_INFLUENCE; j++) {
-                vertices[i].m_BoneIDs[j] = 0;
-                vertices[i].m_Weights[j] = 0.0f;
+                vertex.m_BoneIDs[j] = 0;
+                vertex.m_Weights[j] = 0.0f;
             }
+            vertices.push_back(vertex);
         }
 
         // 새로 추가: 본 데이터 추출
