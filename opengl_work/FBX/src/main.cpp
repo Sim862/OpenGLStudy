@@ -37,7 +37,7 @@ void setupCubeData(unsigned int& VBO, unsigned int& cubeVAO, unsigned int& light
 unsigned int loadTexture2D(const char* path);
 
 void buildImGuiUI();
-void drawScene(Shader& lightingShader,
+void drawScene(Shader& modelShader, Shader& lightingShader,
 	Shader& lightCubeShader,
 	unsigned int cubeVAO,
 	unsigned int lightVAO,
@@ -590,7 +590,7 @@ void CalcAnimationAtTime(const aiNode* node,
 // -------------------------------------------------
 
 // 씬 렌더링 함수 (큐브 + 광원)
-void drawScene(Shader& lightingShader,
+void drawScene(Shader& modelShader, Shader& lightingShader,
 	Shader& lightCubeShader,
 	unsigned int cubeVAO,
 	unsigned int lightVAO,
@@ -621,6 +621,7 @@ void drawScene(Shader& lightingShader,
 	lightingShader.setVec3("light.position", gLightPos);
 	lightingShader.setVec3("viewPos", camera.Position);
 
+
 	glm::vec3 diffuseColor = gLightColor * gDiffuseStrength;
 	glm::vec3 ambientColor = diffuseColor * gAmbientStrength;
 	glm::vec3 specularColor = gLightColor * gSpecularStrength;
@@ -645,6 +646,25 @@ void drawScene(Shader& lightingShader,
 		glDrawArrays(GL_TRIANGLES, 0, 36);
 	}
 
+	// ===== 조명 쉐이더 설정 =====
+	modelShader.use();
+	modelShader.setMat4("projection", projection);
+	modelShader.setMat4("view", view);
+
+	// 조명/재질 유니폼 설정
+	modelShader.setVec3("light.position", gLightPos);
+	modelShader.setVec3("viewPos", camera.Position);
+
+	diffuseColor = gLightColor * gDiffuseStrength;
+	ambientColor = diffuseColor * gAmbientStrength;
+	specularColor = gLightColor * gSpecularStrength;
+
+	modelShader.setVec3("light.ambient", ambientColor);
+	modelShader.setVec3("light.diffuse", diffuseColor);
+	modelShader.setVec3("light.specular", specularColor);
+
+	modelShader.setFloat("material.shininess", 32.0f);
+
 	// === 새로 추가: Assimp로 로딩한 3D 모델 그리기 ===
 	if (model)
 	{
@@ -653,14 +673,14 @@ void drawScene(Shader& lightingShader,
 		modelMat = glm::translate(modelMat, glm::vec3(0.0f, -1.75f, 0.0f));
 		modelMat = glm::scale(modelMat, glm::vec3(0.2f)); // 모델 크기에 맞게 적당히 조절함
 
-		lightingShader.setMat4("model", modelMat);
+		modelShader.setMat4("model", modelMat);
 		for (int i = 0; i < (int)gFinalBones.size(); ++i)
 		{
-			lightingShader.setMat4("finalBonesMatrices[" + std::to_string(i) + "]",
+			modelShader.setMat4("finalBonesMatrices[" + std::to_string(i) + "]",
 				gFinalBones[i]);
 		}
 		// 조명/뷰 설정은 위에서 이미 해 두었으므로 그대로 사용함
-		model->Draw(lightingShader);
+		model->Draw(modelShader);
 	}
 
 	// ===== 광원 큐브 렌더링 =====
@@ -826,7 +846,7 @@ int main()
 
 
 		// 3D 씬(큐브 + 광원) 렌더링
-		drawScene(anim, lightCubeShader,
+		drawScene(anim, lightingShader, lightCubeShader,
 			cubeVAO, lightVAO,
 			diffuseMap, specularMap, &human);
 
