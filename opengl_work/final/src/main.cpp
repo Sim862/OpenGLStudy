@@ -66,7 +66,7 @@ float lastFrame = 0.0f; // 마지막 프레임의 시간
 bool g_UiMode = false;
 
 // 광원과 조명 파라미터 (ImGui로 조절)
-glm::vec3 gLightPos(1.2f, 1.0f, 2.0f);       // 광원 위치
+glm::vec3 gLightPos(0.0f, 7.0f, 2.0f);       // 광원 위치
 glm::vec3 gLightColor(1.0f, 1.0f, 1.0f);     // 기본: 흰색 빛
 
 float gAmbientStrength = 0.5f;  // 주변광 계수
@@ -677,7 +677,7 @@ void CalcAnimationAtTime(const aiNode* node,
 
 void renderSceneGeometry(Shader& shader, unsigned int cubeVAO)
 {
-	return;
+	//return;
 	// 큐브 그리기
 	glBindVertexArray(cubeVAO);
 
@@ -687,7 +687,7 @@ void renderSceneGeometry(Shader& shader, unsigned int cubeVAO)
 		model = glm::translate(model, glm::vec3(0.0f, -1.75f, 0.0f));
 		float angle = 20.0f * i;
 		model = glm::rotate(model, glm::radians(angle), glm::vec3(1.0f, 0.3f, 0.5f));
-		model = glm::scale(model, glm::vec3(5.0f, 0.1f, 5.0f));
+		model = glm::scale(model, glm::vec3(10.0f, 0.1f, 10.0f));
 		shader.setMat4("model", model);
 
 		glDrawArrays(GL_TRIANGLES, 0, 36);
@@ -871,10 +871,13 @@ int main()
 	Shader lightingShader("shaders/basic_lighting_tex.vert", "shaders/basic_lighting_tex.frag");
 	Shader lightCubeShader("shaders/light_cube.vert", "shaders/light_cube.frag");
 	Shader depthShader("shaders/shadow_depth.vert", "shaders/shadow_depth.frag");
+	Shader animDepthShader("shaders/shadow_anim_depth.vert", "shaders/shadow_anim_depth.frag");
 	Shader animShader("shaders/anim.vert", "shaders/anim.frag");
 
 	// 6. 깊이버퍼 사용
 	glEnable(GL_DEPTH_TEST);
+
+	setupShadowMap(gDepthMapFBO, gDepthMap);
 
 	// 7. 정점 데이터, VAO/VBO, 광원용 VAO 설정
 	unsigned int VBO = 0, cubeVAO = 0, lightVAO = 0;
@@ -966,7 +969,10 @@ int main()
 
 		// 큐브 + 모델 기하만 그리는 공용 함수 호출함
 		renderSceneGeometry(depthShader, cubeVAO);
-		renderSceneGeometry_Anim(depthShader, &human);
+
+		animDepthShader.use();
+		animDepthShader.setMat4("lightSpaceMatrix", lightSpaceMatrix);
+		renderSceneGeometry_Anim(animDepthShader, &human);
 
 		glBindFramebuffer(GL_FRAMEBUFFER, 0);
 

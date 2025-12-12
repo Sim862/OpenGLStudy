@@ -46,12 +46,12 @@ float ShadowCalculation(vec4 fragPosLightSpace, vec3 normal, vec3 lightDir)
     vec3 N = normalize(normal);
     vec3 L = normalize(lightDir);
     float ndotl = max(dot(N, L), 0.0);
-    float bias = max(0.005 * (1.0 - ndotl), 0.0005);
+    float bias = max(0.005 * (1.0 - ndotl), 0.005);
 
     // 4. °£´ÜÇÑ PCF (3x3)
     vec2 texelSize = 1.0 / vec2(textureSize(shadowMap, 0));
     float shadow = 0.0;
-    int radius = 1;
+    int radius = 5;
     for (int x = -radius; x <= radius; ++x)
     {
         for (int y = -radius; y <= radius; ++y)
@@ -95,4 +95,5 @@ void main()
     vec3 lighting = ambient + (1.0 - shadow) * (diffuse + specular);
 
     FragColor = vec4(lighting, 1.0);
+
 }
